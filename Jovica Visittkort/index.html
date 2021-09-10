@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Visittkort Jovica</title>
+    <title>Visittkort Gruppe 4A</title>
     <link rel="stylesheet" href="vistittkort.css" />
     <script src="visittkort.js"></script>
     <style></style>
@@ -21,12 +21,12 @@
       //program
       //visittkort Jovica
       //tegnekommandoer
-      ctx.moveTo(0,0);
-      ctx.lineTo(300,0);
-      ctx.lineTo(300,200);
-      ctx.lineTo(0,200);
-      ctx.lineTo(0,0);
-      ctx.lineTo(300,200);
+      ctx.moveTo(0, 0);
+      ctx.lineTo(300, 0);
+      ctx.lineTo(300, 200);
+      ctx.lineTo(0, 200);
+      ctx.lineTo(0, 0);
+      ctx.lineTo(300, 200);
       ctx.stroke();
       ctx.fillStyle = "blue";
       ctx.font = "30px Arial";
@@ -43,24 +43,24 @@
 
       //visittkort Jovica v2
       //tegnekommandoer --KH
-      ctx.moveTo(0,300);
-      ctx.lineTo(300,300);
-      ctx.lineTo(300,500);
-      ctx.lineTo(0,500);
-      ctx.lineTo(0,300);
+      ctx.moveTo(0, 300);
+      ctx.lineTo(300, 300);
+      ctx.lineTo(300, 500);
+      ctx.lineTo(0, 500);
+      ctx.lineTo(0, 300);
       ctx.stroke();
 
       //lage gradient
-      var grd = ctx.createLinearGradient(0,0,c.width,0);
-      grd.addColorStop(0,"black");
-      grd.addColorStop(0.3,"darkgray");
-      grd.addColorStop(0.5,"gray");
-      grd.addColorStop(0.8,"lightgray");
-      grd.addColorStop(1,"lightgray");
+      var grd = ctx.createLinearGradient(0, 0, c.width, 0);
+      grd.addColorStop(0, "black");
+      grd.addColorStop(0.3, "darkgray");
+      grd.addColorStop(0.5, "gray");
+      grd.addColorStop(0.8, "lightgray");
+      grd.addColorStop(1, "lightgray");
 
       //fylte visittkort med gradient
-      ctx.fillStyle =grd;
-      ctx.fillRect(0,300,300,200);
+      ctx.fillStyle = grd;
+      ctx.fillRect(0, 300, 300, 200);
 
       ctx.fillStyle = "white";
       ctx.font = "30px Arial";
@@ -77,24 +77,24 @@
 
       //visittkort Katrine
       //tegnekommandoer --KH
-      ctx.moveTo(400,0);
-      ctx.lineTo(700,0);
-      ctx.lineTo(700,200);
-      ctx.lineTo(400,200);
-      ctx.lineTo(400,0);
+      ctx.moveTo(400, 0);
+      ctx.lineTo(700, 0);
+      ctx.lineTo(700, 200);
+      ctx.lineTo(400, 200);
+      ctx.lineTo(400, 0);
       ctx.stroke();
 
       //lage annen gradient --KH
-      var gradient = ctx.createLinearGradient(0,0,c.width,0);
-      gradient.addColorStop(0,"lightgreen");
-      gradient.addColorStop(0.3,"lightgreen");
-      gradient.addColorStop(0.5,"lightblue");
-      gradient.addColorStop(0.7,"lightpink");
-      gradient.addColorStop(1,"red");
+      var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+      gradient.addColorStop(0, "lightgreen");
+      gradient.addColorStop(0.3, "lightgreen");
+      gradient.addColorStop(0.5, "lightblue");
+      gradient.addColorStop(0.7, "lightpink");
+      gradient.addColorStop(1, "red");
 
       //fylte visittkort med annen gradient --KH
-      ctx.fillStyle =gradient;
-      ctx.fillRect(400,0,300,200);
+      ctx.fillStyle = gradient;
+      ctx.fillRect(400, 0, 300, 200);
 
       //fylte visittkort med info --KH
       ctx.fillStyle = "black";
