@@ -23,9 +23,10 @@ ctx.lineTo(300, 200);
 ctx.stroke();
 
 //fylte visittkort med info
-ctx.fillStyle = "blue";
+ctx.fillStyle = "white";
 ctx.font = "30px Arial";
 ctx.fillText("Jovica Ugrinic", 90, 50);
+ctx.fillStyle = "red";
 ctx.font = "15px Arial";
 ctx.textAlign = "end";
 ctx.fillText("Universitetet i Agder", 140, 120);
