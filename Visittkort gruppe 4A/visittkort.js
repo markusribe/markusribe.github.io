@@ -94,7 +94,7 @@
       ctx.font = "11px Arial";
       ctx.textAlign = "end";
       ctx.fillText("IT og Informasjonssystemer", 561, 160);
-=======
+
 //variabler
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
