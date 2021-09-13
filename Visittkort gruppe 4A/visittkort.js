@@ -60,7 +60,7 @@ ctx.fillRect(0, 300, 300, 200);
 //fylte visittkort med info
 ctx.fillStyle = "white";
 ctx.font = "30px Arial";
-ctx.fillText("Navn ", 275, 350);
+ctx.fillText("Eksempel ", 275, 350);
 ctx.font = "15px Arial";
 ctx.textAlign = "end";
 ctx.fillText("Universitetet i Agder", 140, 420);
@@ -73,11 +73,11 @@ ctx.fillText("IT og Informasjonssystemer", 144, 460);
 
 //visittkort Katrine
 //tegnekommandoer --KH
-ctx.moveTo(400, 1);
-ctx.lineTo(700, 1);
+ctx.moveTo(400, 0);
+ctx.lineTo(700, 0);
 ctx.lineTo(700, 200);
 ctx.lineTo(400, 200);
-ctx.lineTo(400, 1);
+ctx.lineTo(400, 0);
 ctx.stroke();
 
 //lage annen gradient --KH
@@ -90,7 +90,7 @@ gradient.addColorStop(1, "red");
 
 //fylte visittkort med annen gradient --KH
 ctx.fillStyle = gradient;
-ctx.fillRect(400, 1, 300, 199);
+ctx.fillRect(400, 0, 300, 200);
 
 //fylte visittkort med info --KH
 ctx.fillStyle = "black";
