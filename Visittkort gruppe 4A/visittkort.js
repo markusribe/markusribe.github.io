@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
       //variabler
       var c = document.getElementById("myCanvas");
@@ -203,4 +202,4 @@ ctx.fillText("Fakultetet for samfunnsvitenskap", 587, 140);
 ctx.font = "11px Arial";
 ctx.textAlign = "end";
 ctx.fillText("IT og Informasjonssystemer", 561, 160);
->>>>>>> 3841b65e5403d0012668eac571680f24aefc1d47
+
