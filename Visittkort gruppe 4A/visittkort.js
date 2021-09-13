@@ -106,3 +106,45 @@ ctx.fillText("Fakultetet for samfunnsvitenskap", 587, 140);
 ctx.font = "11px Arial";
 ctx.textAlign = "end";
 ctx.fillText("IT og Informasjonssystemer", 561, 160);
+
+//visittkort Markus
+//tegnekommandoer --MR
+ctx.moveTo(0,600);
+ctx.lineTo(300, 600);
+ctx.lineTo(300,800);
+ctx.lineTo(0,800);
+ctx.lineTo(0, 600);
+ctx.stroke();
+
+//lagde gradient --MR (tror ikke denne funker)
+var gradient1 = ctx.createLinearGradient(0,0, c.width,0);
+gradient1.addColorStop(0,"black");
+gradient1.addColorStop(0.3, "grey");
+gradient1.addColorStop(0.5, "lightgrey");
+gradient1.addColorStop(0.8, "lightgrey");
+gradient1.addColorStop(1, "white");
+
+//fylte visittkort med gradient --MR
+ctx.fillStyle = gradient1;
+ctx.fillRect(0,600,300,200);
+
+//fylte vissittkort med info --MR
+ctx.fillStyle = "white";
+ctx.font = "30px Times New Roman";
+ctx.fillText("Markus Ribe", 270,650);
+ctx.font = "15px Times New Roman";
+ctx.textAlign = "end";
+ctx.fillText("Universitetet i Agder", 270, 700);
+ctx.font = "11px Times New Roman";
+ctx.textAlign = "end";
+ctx.fillText("Fakultet for samfunnsvitenskap", 270, 720);
+ctx.font = "11px Times New Roman";
+ctx.textAlign = "end";
+ctx.fillText("IT og Informasjonssystemer", 270, 732);
+
+//setter inn bilde i visittkort
+var img = document.createElement("img")
+img.src = "https://pbs.twimg.com/profile_images/1245761461827198976/iVypuDnz.jpg"
+var src = document.getElementById("picture")
+src.appendChild(img)
+
