@@ -60,7 +60,7 @@ ctx.fillRect(0, 300, 300, 200);
 //fylte visittkort med info
 ctx.fillStyle = "white";
 ctx.font = "30px Arial";
-ctx.fillText("Eksempel ", 275, 350);
+ctx.fillText("Markus Ribe ", 275, 350);
 ctx.font = "15px Arial";
 ctx.textAlign = "end";
 ctx.fillText("Universitetet i Agder", 140, 420);
