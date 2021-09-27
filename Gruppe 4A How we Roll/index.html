@@ -10,17 +10,16 @@
       /* CSS GRID */
       .visittkort {
         display: grid;
-        grid-template-columns: 500px 500px;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-gap: 30px;
         justify-content: center;
         grid-template-areas:
-          "Header Header"
-          "Navbar Navbar"
-          "Håkon Sebastian"
-          "Jovica SebastianS"
-          "Katrine Simon"
-          "Markus .";
+          "Header Header Header"
+          "Navbar Navbar Navbar "
+          "Håkon Sebastian Jovica "
+          "SebastianS Katrine Simon"
+          "Markus . .";
       }
       .grid-area {
         padding: 1em;
@@ -103,10 +102,10 @@
     <section class="grid-area Katrine">Katrine</section>
     <section class="grid-area Simon">Simon</section>
     <section class="grid-area Markus">
-    <h1>Universitetet i Agder</h1>
-    <p>Markus Ribe</p>
-    <p>Fakultet for samfunnsvitenskap</p>
-    <p>IT og informasjonssystemer</p>
+      <h1>Universitetet i Agder</h1>
+      <p>Markus Ribe</p>
+      <p>Fakultet for samfunnsvitenskap</p>
+      <p>IT og informasjonssystemer</p>
     </section>
   </div>
 </html>
