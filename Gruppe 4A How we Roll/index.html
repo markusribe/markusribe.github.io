@@ -15,6 +15,7 @@
         grid-gap: 30px;
         grid-template-areas:
           "Header Header"
+          "Navbar Navbar"
           "Håkon Sebastian"
           "Jovica SebastianS"
           "Katrine Simon"
@@ -29,7 +30,9 @@
       .Header {
         grid-area: Header;
       }
-
+      .Navbar {
+        grid-area: Navbar;
+      }
       .Header > h1 {
         text-align: center;
       }
@@ -62,8 +65,9 @@
   <!--  -->
   <div class="visittkort">
     <section class="grid-area Header">
-      <h1>Vistittkort Gruppe 4A</h1>
+      <h1>Vistittkort Gruppe 4A & How we roll</h1>
     </section>
+    <section class="grid-area Navbar"></section>
     <section class="grid-area Håkon">Håkon</section>
     <section class="grid-area Sebastian">Sebastian</section>
     <section class="grid-area Jovica">Jovica</section>
