@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,8 +11,8 @@
         display: grid;
         width: 100%;
         height: 100%;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
         grid-gap: 30px;
         grid-template-areas:
           "Header Header"
@@ -23,7 +23,7 @@
       }
       .grid-area {
         padding: 1em 1em 1em 1em;
-        border: 10px;
+        border: solid 1px;
       }
       .Header {
         grid-area: Header;
@@ -58,7 +58,6 @@
       .Markus {
         grid-area: Markus;
         box-shadow: 10px 10px 10px;
-        max-width: 1fr;
       }
     </style>
   </head>
