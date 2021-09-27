@@ -10,9 +10,10 @@
       /* CSS GRID */
       .visittkort {
         display: grid;
-        grid-template-columns: 2fr 2fr;
-        grid-template-rows: 2fr 2fr;
+        grid-template-columns: 400px 400px;
+        grid-template-rows: 1fr 1fr;
         grid-gap: 30px;
+        justify-content: center;
         grid-template-areas:
           "Header Header"
           "Navbar Navbar"
@@ -30,11 +31,11 @@
       .Header {
         grid-area: Header;
       }
-      .Navbar {
-        grid-area: Navbar;
-      }
       .Header > h1 {
         text-align: center;
+      }
+      .Navbar {
+        grid-area: Navbar;
       }
 
       .Håkon {
@@ -45,7 +46,17 @@
       }
       .Jovica {
         grid-area: Jovica;
+        font-family: Arial, Helvetica, sans-serif;
+        background: url("IMG/uia\ logo.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        background: ;
       }
+      .Jovica > h1 {
+        text-align: left;
+      }
+
       .SebastianS {
         grid-area: SebastianS;
       }
@@ -70,7 +81,12 @@
     <section class="grid-area Navbar"></section>
     <section class="grid-area Håkon">Håkon</section>
     <section class="grid-area Sebastian">Sebastian</section>
-    <section class="grid-area Jovica">Jovica</section>
+    <section class="grid-area Jovica">
+      <h1>Universitet i Agder</h1>
+      <p>Jovica Ugrinic</p>
+      <p>Fakultet for samfunnsvitenskap</p>
+      <p>IT og informasjonssystemer</p>
+    </section>
     <section class="grid-area SebastianS">Sebastian S</section>
     <section class="grid-area Katrine">Katrine</section>
     <section class="grid-area Simon">Simon</section>
