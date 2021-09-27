@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gruppe 4a visittkort og How we roll</title>
+    <style>
+      .visittkort {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 30px;
+        grid-template-areas:
+          "Header Header"
+          "Håkon Sebastian"
+          "Jovica SebastianS"
+          "Kathrine Simon"
+          "Markus Markus";
+      }
+      .grid-area {
+        padding: 1em 1em 1em 1em;
+        border: 10px;
+      }
+      .Header {
+        grid-area: Header;
+        box-shadow: 10px 10px 10px;
+      }
+
+      .Håkon {
+        grid-area: Håkon;
+        box-shadow: 10px 10px 10px;
+      }
+      .Sebastian {
+        grid-area: Sebastian;
+        box-shadow: 10px 10px 10px;
+      }
+      .Jovica {
+        grid-area: Jovica;
+        box-shadow: 10px 10px 10px;
+      }
+      .SebastianS {
+        grid-area: SebastianS;
+        box-shadow: 10px 10px 10px;
+      }
+      .Kathrine {
+        grid-area: Kathrine;
+        box-shadow: 10px 10px 10px;
+      }
+      .Simon {
+        grid-area: Simon;
+        box-shadow: 10px 10px 10px;
+      }
+
+      .Markus {
+        grid-area: Markus;
+        box-shadow: 10px 10px 10px;
+        max-width: 1fr;
+      }
+    </style>
+  </head>
+  <div class="visittkort">
+    <section class="grid-area Header">Header</section>
+    <section class="grid-area Håkon">Håkon</section>
+    <section class="grid-area Sebastian">Sebastian</section>
+    <section class="grid-area Jovica">Jovica</section>
+    <section class="grid-area SebastianS">Sebastian S</section>
+    <section class="grid-area Kathrine">Kathrine</section>
+    <section class="grid-area Simon">Simon</section>
+    <section class="grid-area Markus">markus</section>
+  </div>
+
+  <body></body>
+</html>
