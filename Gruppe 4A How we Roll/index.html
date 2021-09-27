@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gruppe 4a visittkort og How we roll</title>
     <style>
+      /* CSS GRID */
       .visittkort {
         display: grid;
         grid-template-columns: 2fr 2fr;
@@ -20,48 +21,49 @@
           "Markus .";
       }
       .grid-area {
-        padding: 1em 1em 1em 1em;
+        padding: 1em;
         border: solid 1px;
-        box-shadow: 10px 10px 10px;a
+        box-shadow: 10px 10px 10px;
       }
+      /* CSS area define */
       .Header {
         grid-area: Header;
+      }
 
+      .Header > h1 {
+        text-align: center;
       }
 
       .Håkon {
         grid-area: Håkon;
-
       }
       .Sebastian {
         grid-area: Sebastian;
-
       }
       .Jovica {
         grid-area: Jovica;
-
       }
       .SebastianS {
         grid-area: SebastianS;
-
       }
       .Katrine {
         grid-area: Katrine;
-
       }
       .Simon {
         grid-area: Simon;
-
       }
 
       .Markus {
         grid-area: Markus;
-
       }
     </style>
   </head>
+  <!-- HTML Vistittkort info -->
+  <!--  -->
   <div class="visittkort">
-    <section class="grid-area Header">Header</section>
+    <section class="grid-area Header">
+      <h1>Vistittkort Gruppe 4A</h1>
+    </section>
     <section class="grid-area Håkon">Håkon</section>
     <section class="grid-area Sebastian">Sebastian</section>
     <section class="grid-area Jovica">Jovica</section>
