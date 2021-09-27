@@ -10,17 +10,16 @@
       /* CSS GRID */
       .visittkort {
         display: grid;
-        grid-template-columns: 500px 500px;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-gap: 30px;
         justify-content: center;
         grid-template-areas:
-          "Header Header"
-          "Navbar Navbar"
-          "Håkon Sebastian"
-          "Jovica SebastianS"
-          "Katrine Simon"
-          "Markus .";
+          "Header Header Header"
+          "Navbar Navbar Navbar "
+          "Håkon Sebastian Jovica "
+          "SebastianS Katrine Simon"
+          "Markus . .";
       }
       .grid-area {
         padding: 1em;
@@ -28,7 +27,7 @@
         box-shadow: 10px 10px 10px black;
       }
       .wrapper {
-        padding: 40px;
+        padding: 70px;
       }
       /* CSS area define */
       .Header {
