@@ -8,19 +8,21 @@
     <title>Gruppe 4a visittkort og How we roll</title>
     <style>
       /* CSS GRID */
-      .visittkort {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-gap: 30px;
-        justify-content: center;
-        grid-template-areas:
-          "Header Header Header"
-          "Navbar Navbar Navbar "
-          "Håkon Sebastian Jovica "
-          "SebastianS Katrine Simon"
-          "Markus . .";
+      @media (min-width: 800px) {
+        .visittkort {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-gap: 30px;
+          justify-content: center;
+          grid-template-areas:
+            "Header Header Header"
+            "Navbar Navbar Navbar "
+            "Håkon Sebastian Jovica "
+            "SebastianS Katrine Simon"
+            "Markus . .";
+        }
       }
+
       .grid-area {
         padding: 1em;
         border: solid 1px;
