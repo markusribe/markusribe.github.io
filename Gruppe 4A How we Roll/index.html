@@ -1,143 +1,167 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gruppe 4a visittkort og How we roll</title>
-  <style>
-    /* CSS GRID */
-    .visittkort {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-gap: 30px;
-      justify-content: center;
-      grid-template-areas:
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gruppe 4a visittkort og How we roll</title>
+    <style>
+      /* CSS GRID */
+      .visittkort {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 30px;
+        justify-content: center;
+        grid-template-areas:
           "Header Header Header"
           "Navbar Navbar Navbar "
           "Håkon Sebastian Jovica "
           "SebastianS Katrine Simon"
           "Markus . .";
-    }
-    .grid-area {
-      padding: 1em;
-      border: solid 1px;
-      box-shadow: 10px 10px 10px black;
-    }
-    /* Wrapper CSS */
-    .Wrapper {
-      padding: 30px;
-      border: solid 10px;
-    }
-    /* CSS area define */
-    .Header {
-      grid-area: Header;
-    }
-    .Header > h1 {
-      text-align: center;
-    }
-    .Navbar {
-      grid-area: Navbar;
-      text-align: center;
-    }
-    .Navbar > ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-    .Håkon {
-      grid-area: Håkon;
-    }
-    .Sebastian {
-      grid-area: Sebastian;
-    }
-    .Jovica {
-      grid-area: Jovica;
-      font-family: Arial, Helvetica, sans-serif;
-      background-image: url("IMG/uia logo.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: right;
-      background-color: black;
-      color: white;
-    }
-    .Jovica > h1 {
-      text-align: left;
-    }
-    .SebastianS {
-      grid-area: SebastianS;
-    }
-    .Katrine {
-      grid-area: Katrine;
-      background-image: url("IMG/techBakgrunn.jfif");
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
-
-    }
-    .Simon {
-      grid-area: Simon;
-    }
-    .Markus {
-      grid-area: Markus;
-      font-family: sans-serif, Arial;
-      background-image: url("IMG/uia logo.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: right;
-    }
-    .Markus > h1 {
-      text-align: left;
-    }
-  </style>
-</head>
-<!-- HTML Vistittkort info -->
-<!-- Wrapper -->
-<div class="Wrapper">
-  <div class="visittkort">
-    <section class="grid-area Header">
-      <h1>Vistittkort Gruppe 4A & How we roll</h1>
-    </section>
-    <section class="grid-area Navbar">
-      <ul>
-        <li><a href="how-we-roll.html">How-we-roll</a></li>
-        <li><a href="hwr-report.html">Hwr-report</a></li>
-      </ul>
-    </section>
-    <section class="grid-area Håkon">Håkon</section>
-    <section class="grid-area Sebastian">Sebastian</section>
-    <section class="grid-area Jovica">
-      <h1>Universitet i Agder</h1>
-      <p>Jovica Ugrinic</p>
-      <p>Fakultet for samfunnsvitenskap</p>
-      <p>IT og informasjonssystemer</p>
-    </section>
-    <section class="grid-area SebastianS">Sebastian S</section>
-    <section class="grid-area Katrine">
-      <div id="KH" style="background-color:rgba(255,255,255,0.8); padding: 20px">
-        <div>
-          <span style="text-transform: uppercase; font-size: 20px">Universitetet i Agder</span><br><br>
-          <span style="line-height: 30px"><strong style="font-size: 18px">Katrine Huynh</strong></span><br>
-          <span id="studie" style="text-transform: uppercase; font-size: 10px; line-height: 8px">It og informasjonssystemer<br>
-            </span>
-          <a href="https://github.com/Kaduhuy"
-             style="text-decoration: none; font-size: 10px; color: black">github.com/Kaduhuy</a><br>
-          <span style="font-size: 10px;">dkhuynh@uia.no</span>
-        </div>
-        <div style="width: 40%"></div>
-        <div id="bilde"><img src="IMG/Katrine.jpg" alt="Katrine" style="height: 120px; border-radius: 50%"></div>
+      }
+      .grid-area {
+        padding: 1em;
+        border: solid 1px;
+        box-shadow: 10px 10px 10px black;
+      }
+      /* Wrapper CSS */
+      .Wrapper {
+        padding: 30px;
+        border: solid 10px;
+      }
+      /* CSS area define */
+      .Header {
+        grid-area: Header;
+      }
+      .Header > h1 {
+        text-align: center;
+      }
+      .Navbar {
+        grid-area: Navbar;
+        text-align: center;
+      }
+      .Navbar > ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      .Håkon {
+        grid-area: Håkon;
+      }
+      .Sebastian {
+        grid-area: Sebastian;
+      }
+      .Jovica {
+        grid-area: Jovica;
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url("IMG/uia logo.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-color: black;
+        color: white;
+      }
+      .Jovica > h1 {
+        text-align: left;
+      }
+      .SebastianS {
+        grid-area: SebastianS;
+      }
+      .Katrine {
+        grid-area: Katrine;
+        background-image: url("IMG/techBakgrunn.jfif");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      .Simon {
+        grid-area: Simon;
+      }
+      .Markus {
+        grid-area: Markus;
+        font-family: sans-serif, Arial;
+        background-image: url("IMG/uia logo.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+      }
+      .Markus > h1 {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <!-- Wrapper -->
+  <body>
+    <div class="Wrapper">
+      <!-- HTML Vistittkort info -->
+      <div class="visittkort">
+        <section class="grid-area Header">
+          <h1>Vistittkort Gruppe 4A & How we roll</h1>
+        </section>
+        <section class="grid-area Navbar">
+          <ul>
+            <li><a href="how-we-roll.html">How-we-roll</a></li>
+            <br />
+            <li><a href="hwr-report.html">Hwr-report</a></li>
+          </ul>
+        </section>
+        <section class="grid-area Håkon">Håkon</section>
+        <section class="grid-area Sebastian">Sebastian</section>
+        <section class="grid-area Jovica">
+          <h1>Universitet i Agder</h1>
+          <p>Jovica Ugrinic</p>
+          <p>Fakultet for samfunnsvitenskap</p>
+          <p>IT og informasjonssystemer</p>
+        </section>
+        <section class="grid-area SebastianS">Sebastian S</section>
+        <section class="grid-area Katrine">
+          <div
+            id="KH"
+            style="background-color: rgba(255, 255, 255, 0.8); padding: 20px"
+          >
+            <div>
+              <span style="text-transform: uppercase; font-size: 20px"
+                >Universitetet i Agder</span
+              ><br /><br />
+              <span style="line-height: 30px"
+                ><strong style="font-size: 18px">Katrine Huynh</strong></span
+              ><br />
+              <span
+                id="studie"
+                style="
+                  text-transform: uppercase;
+                  font-size: 10px;
+                  line-height: 8px;
+                "
+                >It og informasjonssystemer<br />
+              </span>
+              <a
+                href="https://github.com/Kaduhuy"
+                style="text-decoration: none; font-size: 10px; color: black"
+                >github.com/Kaduhuy</a
+              ><br />
+              <span style="font-size: 10px">dkhuynh@uia.no</span>
+            </div>
+            <div style="width: 40%"></div>
+            <div id="bilde">
+              <img
+                src="IMG/Katrine.jpg"
+                alt="Katrine"
+                style="height: 120px; border-radius: 50%"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="grid-area Simon">Simon</section>
+        <section class="grid-area Markus">
+          <h1>Universitetet i Agder</h1>
+          <p>Markus Ribe</p>
+          <p>Fakultet for samfunnsvitenskap</p>
+          <p>IT og informasjonssystemer</p>
+        </section>
       </div>
-
-    </section>
-    <section class="grid-area Simon">Simon</section>
-    <section class="grid-area Markus">
-      <h1>Universitetet i Agder</h1>
-      <p>Markus Ribe</p>
-      <p>Fakultet for samfunnsvitenskap</p>
-      <p>IT og informasjonssystemer</p>
-    </section>
-  </div>
-</div>
+    </div>
+  </body>
 </html>
