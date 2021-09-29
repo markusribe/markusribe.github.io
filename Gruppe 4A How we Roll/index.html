@@ -31,7 +31,6 @@
       /* Wrapper CSS */
       .Wrapper {
         padding: 30px;
-        border: solid 10px;
       }
       /* CSS area define */
       .Header {
@@ -81,6 +80,11 @@
         background-attachment: fixed;
         background-size: cover;
       }
+      .Katrine>div{
+        display: flex;
+        flex-wrap: nowrap;
+      }
+
       .Simon {
         grid-area: Simon;
       }
@@ -135,27 +139,34 @@
             <div>
               <span style="text-transform: uppercase; font-size: 20px"
                 >Universitetet i Agder</span
-              ><br /><br />
+              ><br><br>
               <span style="line-height: 30px"
-                ><strong style="font-size: 18px">Katrine Huynh</strong></span
-              ><br />
+                ><strong style="font-size: 18px">Katrine Huynh</strong></span>
+              <br>
+              <span
+                      style="
+                      text-transform: uppercase;
+                      font-size: 10px;
+                      line-height: 8px">
+                <strong>Fakultet for samfunnsvitenskap</strong>
+            </span>
+              <br>
               <span
                 id="studie"
                 style="
                   text-transform: uppercase;
                   font-size: 10px;
                   line-height: 8px;
-                "
-                >It og informasjonssystemer<br />
+                ">It og informasjonssystemer<br>
               </span>
               <a
                 href="https://github.com/Kaduhuy"
                 style="text-decoration: none; font-size: 10px; color: black"
                 >github.com/Kaduhuy</a
-              ><br />
+              ><br>
               <span style="font-size: 10px">dkhuynh@uia.no</span>
             </div>
-            <div style="width: 40%"></div>
+            <div style="width: 5%"></div>
             <div id="bilde">
               <img
                 src="IMG/Katrine.jpg"
@@ -168,9 +179,11 @@
         <section class="grid-area Simon">Simon</section>
         <section class="grid-area Markus">
           <h1>Universitetet i Agder</h1>
-          <p>Markus Ribe</p>
-          <p>Fakultet for samfunnsvitenskap</p>
-          <p>IT og informasjonssystemer</p>
+          <p><strong>Markus Ribe<strong/></p>
+          <p style="line-height: 8px; font-size: 10px">Fakultet for samfunnsvitenskap</p>
+          <p style="line-height: 8px; font-size: 10px">IT og informasjonssystemer</p>
+          <p style="line-height: 8px; font-size: 10px">github.com/markusribe</p>
+          <p style="line-height: 8px; font-size: 10px">markusri@uia.no</p>
         </section>
       </div>
     </div>
