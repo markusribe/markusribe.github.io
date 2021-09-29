@@ -86,6 +86,11 @@
         display: flex;
         flex-wrap: nowrap;
       }
+      .info{
+        text-transform: uppercase;
+        font-size: 10px;
+        line-height: 8px;
+      }
 
       .Simon {
         grid-area: Simon;
@@ -100,6 +105,16 @@
       }
       .Markus > h1 {
         text-align: left;
+      }
+      .Markus > p {
+        line-height: 8px;
+        font-size: 10px;
+      }
+      .Markus > a {
+        line-height: 8px;
+        font-size: 10px;
+        text-decoration: none;
+        color: black;
       }
     </style>
   </head>
@@ -121,8 +136,8 @@
           <h1>Universitet i Agder</h1>
           <p>Håkon</p>
           <p>IT og informasjonssystemer</p>
-          <p>Github</p>
-          <p>Mail</p>
+          <p>Github: https://github.com/Haakonbk</p>
+          <p>Mail: Haakonbk@uia.no</p>
           
         </section>
         <section class="grid-area Sebastian">
@@ -143,36 +158,26 @@
         <section class="grid-area Katrine">
           <div
             id="KH"
-            style="background-color: rgba(255, 255, 255, 0.8); padding: 20px"
-          >
+            style="background-color: rgba(255, 255, 255, 0.8); padding: 20px;">
             <div>
-              <span style="text-transform: uppercase; font-size: 20px"
-                >Universitetet i Agder</span
-              ><br><br>
+              <span style="text-transform: uppercase; font-size: 20px;">
+                Universitetet i Agder</span>
+              <br><br>
               <span style="line-height: 30px"
                 ><strong style="font-size: 18px">Katrine Huynh</strong></span>
               <br>
-              <span
-                      style="
-                      text-transform: uppercase;
-                      font-size: 10px;
-                      line-height: 8px">
+              <span class="info">
                 <strong>Fakultet for samfunnsvitenskap</strong>
             </span>
               <br>
-              <span
-                id="studie"
-                style="
-                  text-transform: uppercase;
-                  font-size: 10px;
-                  line-height: 8px;
-                ">It og informasjonssystemer<br>
+              <span class="info">
+                It og informasjonssystemer<br>
               </span>
               <a
                 href="https://github.com/Kaduhuy"
-                style="text-decoration: none; font-size: 10px; color: black"
-                >github.com/Kaduhuy</a
-              ><br>
+                style="text-decoration: none; font-size: 10px; color: black">
+                github.com/Kaduhuy</a>
+              <br>
               <span style="font-size: 10px">dkhuynh@uia.no</span>
             </div>
             <div style="width: 5%"></div>
@@ -188,11 +193,11 @@
         <section class="grid-area Simon">Simon</section>
         <section class="grid-area Markus">
           <h1>Universitetet i Agder</h1>
-          <p><strong>Markus Ribe<strong/></p>
-          <p style="line-height: 8px; font-size: 10px">Fakultet for samfunnsvitenskap</p>
-          <p style="line-height: 8px; font-size: 10px">IT og informasjonssystemer</p>
-          <p style="line-height: 8px; font-size: 10px">github.com/markusribe</p>
-          <p style="line-height: 8px; font-size: 10px">markusri@uia.no</p>
+          <p1><strong>Markus Ribe</strong></p1>
+          <p>Fakultet for samfunnsvitenskap</p>
+          <p>IT og informasjonssystemer</p>
+          <a href="https://github.com/markusribe">github.com/markusribe</a>
+          <p>markusri@uia.no</p>
         </section>
       </div>
     </div>
