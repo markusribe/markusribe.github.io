@@ -5,8 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>hwr-report</title>
+    <style>
+      .Wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        grid-gap: 30px;
+        grid-template-areas:
+            "Header Header Header"
+            "Navbar Navbar Navbar ";
+      }
+      .grid-area {
+        padding: 1em;
+        border: solid 1px;
+        box-shadow: 10px 10px 10px black;
+      }
+      /* Wrapper CSS */
+      .Wrapper {
+        padding: 30px;
+      }
+      /* CSS area define */
+      .Header {
+        grid-area: Header;
+      }
+      .Header > h1 {
+        text-align: center;
+      }
+      .Navbar {
+        grid-area: Navbar;
+        text-align: center;
+      }
+      .Navbar > ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
   </head>
   <body>
+    <div class="Wrapper">
+        <section class="grid-area Header">
+          <h1>HOW WE ROLL REPORT</h1>
+        </section>
+        <section class="grid-area Navbar">
+          <ul>
+            <li><a href="index.html">Hjem til visittkort</a></li>
+            <li><a href="how-we-roll.html">How we roll</a></li>
+          </ul>
+        </section>
+    </div>
     <script>
       //henter formen fra server
       fetch('https://bacit.info/hwr/20210930124013-14381db014f163f17bffdb5238b5657c.json')
