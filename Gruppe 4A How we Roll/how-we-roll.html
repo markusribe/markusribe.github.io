@@ -28,12 +28,17 @@
           <label for="alsa">Liker du best å jobbe alene eller med andre?:</label><br>
           <label for="alsa">Jobbe med andre :)</label>
           <input type="range" id="alsa" name="alsa" min="0" max="10">
-          <label for="alsa">Jobbe for seg selv :(</label>
+          <label for="alsa">Jobbe for seg selv :(</label><br>
         </p>
+        <button type="submit">Submit form</button>
       </form>
+      <div class="results">
+        <h2>Form Data</h2>
+        <pre></pre>
+    </div>
     </div>
 
-    <!-- <script>
+   <script>
       // From https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch (seen 2021-09-27)
       // Example POST method implementation using fetch:
       async function postData(url = '', data = {}) {
@@ -66,6 +71,6 @@
       }
       const form = document.querySelector('form');
       form.addEventListener('submit', handleSubmit);
-     </script> -->
+     </script> 
   </body>
 </html>
