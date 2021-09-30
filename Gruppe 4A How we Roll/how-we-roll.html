@@ -48,10 +48,57 @@
         opacity: 1;
         right: 10px;
       }
+      .visittkort {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        grid-gap: 30px;
+        grid-template-areas:
+            "Header Header Header"
+            "Navbar Navbar Navbar ";
+      }
+      .grid-area {
+        padding: 1em;
+        border: solid 1px;
+        box-shadow: 10px 10px 10px black;
+      }
+      /* Wrapper CSS */
+      .Wrapper {
+        padding: 30px;
+      }
+      /* CSS area define */
+      .Header {
+        grid-area: Header;
+      }
+      .Header > h1 {
+        text-align: center;
+      }
+      .Navbar {
+        grid-area: Navbar;
+        text-align: center;
+      }
+      .Navbar > ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
     </style>
   </head>
   <body>
-    <h1>HOW WE ROLL</h1>
+  <div class="Wrapper">
+    <div class="visittkort">
+      <section class="grid-area Header">
+        <h1>HOW WE ROLL</h1>
+      </section>
+      <section class="grid-area Navbar">
+        <ul>
+          <li><a href="how-we-roll.html">How-we-roll</a></li>
+          <li><a href="hwr-report.html">Hwr-report</a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+  <br><br>
     <div class=form-container>
       <form>
         <p>
