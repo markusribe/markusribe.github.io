@@ -54,6 +54,7 @@
           </ul>
         </section>
     </div>
+    <div id="displayData"></div>
     <script>
       //henter formen fra server
       fetch('https://bacit.info/hwr/20210930124013-14381db014f163f17bffdb5238b5657c.json')
@@ -63,7 +64,19 @@
       fetch('https://bacit.info/hwr/20210930130723-02f83a4e525df6caa85c513397592e48.json')
       .then(response => response.json())
       .then(data => console.log(data));
-  
+     
+      //TODO prøver å displaye json verdig som html
+    //   function appendData(data) {
+    //   var mainContainer = document.getElementById("displayData");
+    //   for (var i = 0; i < data.length; i++) {
+    //     var div = document.createElement("div");
+    //     div.innerHTML = 'Name: ' + data.Name;
+    //     div.innerHTML = 'Morgenfugl eller natteravn: ' + data.mornat; 
+    //     div.innerHTML = 'Jobbe alene eller sammen: ' + data.alsaM;
+    //     mainContainer.appendChild(div);
+    //   }
+    // }
+    
     </script>
   </body>
 </html>
