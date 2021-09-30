@@ -107,6 +107,29 @@
         display: flex;
         flex-wrap: nowrap;
       }
+      #navnkat{
+        line-height: 30px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      #skole{
+        text-transform: uppercase;
+        font-size: 18px;
+      }
+      #KH{
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+      }
+      #link{
+        text-decoration: none;
+        font-size: 10px;
+        color: black;
+      }
+      #bilde{
+        height: 120px;
+        border-radius: 50%;
+        border: 1px solid black;
+      }
       .info {
         text-transform: uppercase;
         font-size: 10px;
@@ -190,57 +213,45 @@
         <section class="grid-area SebastianS">
         <h1 style="color:red;">Universitetet i Agder</h1>
           <p style="font-size:12px;"><i>Fakultetet for samfunnsvitenskap</i></p>
-          <p style="font-size:12px;">IT og informasjonssystemer</p></br>
+          <p style="font-size:12px;">IT og informasjonssystemer</p><br>
           <p style="color:blue;"><b>Sebastian Salte</b></p>
           <p style="font-size:12px">sebas18@uia.no</p>
-          <a style="font-size:12px"href="https://github.com/sebastiansalte">Github</a>
+          <a style="font-size:12px" href="https://github.com/sebastiansalte">Github</a>
         </section>
-
+<!-- Katrine's visittkort -->
         <section class="grid-area Katrine">
-          <div
-            id="KH"
-            style="background-color: rgba(255, 255, 255, 0.8); padding: 20px"
-          >
+          <div id="KH">
+            <!-- Informasjon i kortet -->
             <div>
-              <span style="text-transform: uppercase; font-size: 20px">
-                Universitetet i Agder</span
-              >
-              <br /><br />
-              <span style="line-height: 30px"
-                ><strong style="font-size: 18px">Katrine Huynh</strong></span
-              >
-              <br />
+              <span id="skole">Universitetet i Agder</span>
+              <br><br>
+              <span id="navnkat">Katrine Huynh</span>
+              <br>
               <span class="info">
                 <strong>Fakultet for samfunnsvitenskap</strong>
               </span>
-              <br />
-              <span class="info"> It og informasjonssystemer<br /> </span>
-              <a
-                href="https://github.com/Kaduhuy"
-                style="text-decoration: none; font-size: 10px; color: black"
-              >
-                github.com/Kaduhuy</a
-              >
-              <br />
+              <br>
+              <span class="info"> It og informasjonssystemer<br></span>
+              <a id="link" href="https://github.com/Kaduhuy">
+                github.com/Kaduhuy</a>
+              <br>
               <span style="font-size: 10px">dkhuynh@uia.no</span>
             </div>
             <div style="width: 5%"></div>
-            <div id="bilde">
-              <img
-                src="IMG/Katrine.jpg"
-                alt="Katrine"
-                style="height: 120px; border-radius: 50%; border: 1px solid black"
-              />
+            <!-- bilde av Katrine-->
+            <div>
+              <img id="bilde" src="IMG/Katrine.jpg" alt="Katrine"/>
             </div>
           </div>
         </section>
+
         <section class="grid-area Simon">
-          <img scr="IMG/uia logo.png" style="top:03%; left:0%">
-          <div style="text-align: center;"> <h1><span style="font-family: 'Times New Roman'">Universitet i Agder</span></h1>
-         <br> <div> <span style="text-transform: uppercase; font-size: 15px"> </br>
+          <img src="IMG/uia logo.png" alt="Simon" style="top:3%; left:0">
+          <div style="text-align: center;"> <h1><span style="font-family:sans-serif, 'Times New Roman'">Universitet i Agder</span></h1>
+         <br> <div> <span style="text-transform: uppercase; font-size: 15px"> <br>
           IT og Informasjonssystemer</span></div>
           <p1><span style="font-family: 'Brush Script MT'; font-size: larger">Simon Duarte Andersen</span></p1> <br>
-          <p2>Email: simonda18@uia.no</p2> </br>
+          <p2>Email: simonda18@uia.no</p2> <br>
             <a href="https://github.com/SimonDuarte">github.com/SimonDuarte</a></div>
         </section>
         <section class="grid-area Markus">
