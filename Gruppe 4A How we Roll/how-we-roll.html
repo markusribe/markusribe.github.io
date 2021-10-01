@@ -56,18 +56,36 @@
     <div class=form-container>
       <form>
         <p>
+          
           <label for="name">Navn:</label>
           <input type="text" name="Navn" id="name"><br>
+          <fieldset>
+            <legend>
         <!-- mornat - morgenfugl eller natteravn -->
           <label for="mornat">Er du en morgenfugl eller natteravn?:</label><br>
           <label for="mornat">Morgenfugl</label>
           <input type="range" id="mornat" name="mornat" min="0" max="10">
           <label for="mornat">Natteravn</label><br>
+        </legend>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>
         <!-- alsa - alene eller sammen -->
           <label for="alsa">Liker du best å jobbe alene eller med andre?:</label><br>
           <label for="alsa">Jobbe med andre :)</label>
           <input type="range" id="alsa" name="alsa" min="0" max="10">
           <label for="alsa">Jobbe for seg selv :(</label><br>
+        </legend>
+        </fieldset>
+        <br>
+       
+
+
+
+
+
+
         </p>
         <button type="submit">Submit form</button>
       </form>
