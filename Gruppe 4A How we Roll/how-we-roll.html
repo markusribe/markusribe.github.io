@@ -32,27 +32,72 @@
       }
 
       button:after {
-        content: '»';
+        content: "🡇";
         position: absolute;
         opacity: 0;
-        top: 14px;
-        right: -20px;
+        right: 5px;
+        top: 35px;
         transition: 0.5s;
       }
 
       button:hover{
-        padding-right: 24px;
-        padding-left:8px;
+        padding-right: 15px;
+        padding-left:15px;
       }
 
       button:hover:after {
         opacity: 1;
-        right: 10px;
+        right: 50px;
+      }
+      .Wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        grid-gap: 30px;
+        grid-template-areas:
+            "Header Header Header"
+            "Navbar Navbar Navbar ";
+      }
+      .grid-area {
+        padding: 1em;
+        border: solid 1px;
+        box-shadow: 10px 10px 10px black;
+      }
+      /* Wrapper CSS */
+      .Wrapper {
+        padding: 30px;
+      }
+      /* CSS area define */
+      .Header {
+        grid-area: Header;
+      }
+      .Header > h1 {
+        text-align: center;
+      }
+      .Navbar {
+        grid-area: Navbar;
+        text-align: center;
+      }
+      .Navbar > ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
       }
     </style>
   </head>
   <body>
-    <h1>HOW WE ROLL</h1>
+  <div class="Wrapper">
+      <section class="grid-area Header">
+        <h1>HOW WE ROLL</h1>
+      </section>
+      <section class="grid-area Navbar">
+        <ul>
+          <li><a href="index.html">Hjem til visittkort</a></li>
+          <li><a href="hwr-report.html">Hwr-report</a></li>
+        </ul>
+      </section>
+    </div>
+      <br><br>
     <div class=form-container>
       <form>
         <p>
