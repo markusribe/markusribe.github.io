@@ -138,7 +138,9 @@
       <div class="results">
         <h2>Form Data</h2>
         <pre></pre>
-    </div>
+        <p>Link til form på server:</p>
+        <a href="" id=link></a>
+      </div>
     </div>
    <script>
       // From https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch (seen 2021-09-27)
@@ -166,9 +168,13 @@
            const data = new FormData(event.target);
            const formJSON = Object.fromEntries(data.entries());
            const results = document.querySelector('.results pre');
+           const link = document.querySelector("#link");
            postData('https://bacit.info/', formJSON)
            .then(data => {
               results.innerText = JSON.stringify(data, null, 2);
+              //denne linken må manuelt legges inn i hwr-report.html
+              link.innerText = "https://bacit.info/hwr/" + data.time + "-" + data.trxid + ".json"; //lager link til server 
+              link.href = "https://bacit.info/hwr/" + data.time + "-" + data.trxid + ".json"; //endrer href i html
            });
       }
       const form = document.querySelector('form');
