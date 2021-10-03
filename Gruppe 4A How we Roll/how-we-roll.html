@@ -7,17 +7,26 @@
     <title>How We Roll</title>
     <style>
       .form-container {
-        display: block;
+        display: inline-block;
         text-align: center;
         width: 100%;
       }
-      
+   
       h1 {
         text-align: center;
       }
       .slider {
+        position:relative;
+        margin: 10px;
         -webkit-appearance: none;
+        width: 50%;
+        height: 15px;
+        border-radius: 5px;
+        background: #d3d3d3;
+        outline: none;
+        cursor: pointer;
       }
+      
       button {
         background-color: royalblue;
         border: none;
@@ -109,7 +118,7 @@
             <legend>Personlighetstest:</legend>
           <label for="name">Navn:</label>
           <input type="text" name="Navn" id="name"><br>
-          
+          <br>
         <!-- mornat - morgenfugl eller natteravn -->
           <label for="mornat">Er du en morgenfugl eller natteravn?:</label><br>
           <label for="mornat">Morgenfugl</label>
