@@ -9,10 +9,14 @@
       .form-container {
         display: block;
         text-align: center;
+        width: 100%;
       }
       
       h1 {
         text-align: center;
+      }
+      .slider {
+        -webkit-appearance: none;
       }
       button {
         background-color: royalblue;
@@ -101,28 +105,28 @@
     <div class=form-container>
       <form>
         <p>
-          
+          <fieldset>
+            <legend>Personlighetstest:</legend>
           <label for="name">Navn:</label>
           <input type="text" name="Navn" id="name"><br>
-          <fieldset>
-            <legend>
+          
         <!-- mornat - morgenfugl eller natteravn -->
           <label for="mornat">Er du en morgenfugl eller natteravn?:</label><br>
           <label for="mornat">Morgenfugl</label>
-          <input type="range" id="mornat" name="mornat" min="0" max="10">
+          <input type="range" id="mornat" class="slider" name="mornat" min="0" max="10">
           <label for="mornat">Natteravn</label><br>
-        </legend>
-        </fieldset>
+        
+        <!-- </fieldset> -->
         <br>
-        <fieldset>
-          <legend>
+        <!-- <fieldset> -->
+        
         <!-- alsa - alene eller sammen -->
           <label for="alsa">Liker du best å jobbe alene eller med andre?:</label><br>
           <label for="alsa">Jobbe med andre :)</label>
-          <input type="range" id="alsa" name="alsa" min="0" max="10">
+          <input type="range" id="alsa" class="slider" name="alsa" min="0" max="10">
           <label for="alsa">Jobbe for seg selv :(</label><br>
-        </legend>
-        </fieldset>
+        
+        
         <br>
        
 
@@ -133,6 +137,7 @@
 
         </p>
         <button type="submit">Submit form</button>
+        </fieldset>
       </form>
       <div class="results">
         <h2>Form Data</h2>
