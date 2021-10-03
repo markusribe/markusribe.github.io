@@ -138,6 +138,7 @@
       <div class="results">
         <h2>Form Data</h2>
         <pre></pre>
+        <div id=link></div>
     </div>
     </div>
    <script>
@@ -166,9 +167,11 @@
            const data = new FormData(event.target);
            const formJSON = Object.fromEntries(data.entries());
            const results = document.querySelector('.results pre');
+           const link = document.querySelector("#link");
            postData('https://bacit.info/', formJSON)
            .then(data => {
               results.innerText = JSON.stringify(data, null, 2);
+              link.innerText = "Link til json fil: https://bacit.info/hwr/" + data.time + "-" + data.trxid; + ".json" //lager link til 
            });
       }
       const form = document.querySelector('form');
