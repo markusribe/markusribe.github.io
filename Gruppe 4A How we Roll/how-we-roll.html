@@ -117,6 +117,30 @@
         background-color: black;
         color: white;
       }
+      .middle>input{
+        width: 90%;
+      }
+      .left{
+        text-align: right;
+      }
+      .right{
+        text-align: left;
+      }
+      table{
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .question{
+        padding-top: 30px;
+      }
+      fieldset{
+        margin-left: 20%;
+        margin-right: 20%;
+        min-width: 500px;
+      }
+      legend{
+        font-size: 30px;
+      }
     </style>
   </head>
   <body>
@@ -136,150 +160,233 @@
       <form>
         <fieldset>
           <legend>Personlighetstest:</legend>
-          <label for="name">Navn:</label>
-          <input type="text" name="Navn" id="name" /><br />
-          <br />
-          <!-- mornat - morgenfugl eller natteravn -->
-          <label for="mornat">Er du en morgenfugl eller natteravn?:</label
-          ><br />
-          <label for="mornat">Morgenfugl</label>
-          <input
-            type="range"
-            id="mornat"
-            class="slider"
-            name="mornat"
-            min="0"
-            max="10"
-          />
-          <label for="mornat">Natteravn</label><br />
-          <br />
-          <!-- alsa - alene eller sammen -->
-          <label for="alsa">Liker du best å jobbe alene eller med andre?:</label
-          ><br />
-          <label for="alsa">Jobbe med andre :)</label>
-          <input
-            type="range"
-            id="alsa"
-            class="slider"
-            name="alsa"
-            min="0"
-            max="10"
-          />
-          <label for="alsa">Jobbe for seg selv :(</label><br />
-          <br />
-          <!-- borf - bakhistorie eller rett fram -->
-          <label for="borf"
-            >Liker du historien bak ting eller kutte ut historien?:</label
-          ><br />
-          <label for="borf">Fortell meg :)</label>
-          <input
-            type="range"
-            id="borf"
-            class="slider"
-            name="borf"
-            min="0"
-            max="10"
-          />
-          <label for="borf">Kutt ut :(</label><br />
-          <br />
-          <!-- snvi - snakke om det eller gå videre -->
-          <label for="snvi"
-            >Foretrekker du å snakke om det eller gå videre?:</label
-          ><br />
-          <label for="snvi">Snakke om det</label>
-          <input
-            type="range"
-            id="snvi"
-            class="slider"
-            name="snvi"
-            min="0"
-            max="10"
-          />
-          <label for="snvi">Gå videre</label><br />
-          <br />
-          <!-- vemo - verbal prosessor eller mental prosessor -->
-          <label for="vemo">Jobber du bedre verbalt eller mentalt?:</label
-          ><br />
-          <label for="vemo">Verbal prosessor</label>
-          <input
-            type="range"
-            id="vemo"
-            class="slider"
-            name="vemo"
-            min="0"
-            max="10"
-          />
-          <label for="vemo">Mental prosessor</label><br />
-          <br />
-          <!-- sepr - sett av tid eller prate -->
-          <label for="sepr"
-            >Sett av tid til å prate eller avbryt for å prate?:</label
-          ><br />
-          <label for="sepr">Sett av tid</label>
-          <input
-            type="range"
-            id="sepr"
-            class="slider"
-            name="sepr"
-            min="0"
-            max="10"
-          />
-          <label for="sepr">Avbryt for å prate</label><br />
-          <br />
-          <!-- vich - video eller chat -->
-          <label for="vich">Liker du best video eller chat?:</label><br />
-          <label for="vich">Video</label>
-          <input
-            type="range"
-            id="vich"
-            class="slider"
-            name="vich"
-            min="0"
-            max="10"
-          />
-          <label for="vich">Chat</label><br />
-          <br />
-          <!-- fafl - fast eller fleksibel timeplan -->
-          <label for="fafl">Liker du best fast eller fleksibel timeplan?:</label
-          ><br />
-          <label for="fafl">Fast</label>
-          <input
-            type="range"
-            id="fafl"
-            class="slider"
-            name="fafl"
-            min="0"
-            max="10"
-          />
-          <label for="fafl">Fleksibel</label><br />
-          <br />
-          <!-- wima - Windows eller macOS -->
-          <label for="wima">Liker du best Windows eller macOS?:</label><br />
-          <label for="wima">Windows</label>
-          <input
-            type="range"
-            id="wima"
-            class="slider"
-            name="wima"
-            min="0"
-            max="10"
-          />
-          <label for="wima">macOS</label><br />
-          <br />
-          <!-- kate - kaffe eller te -->
-          <label for="kate">Liker du best kaffé eller te?:</label><br />
-          <label for="kate">Kaffé</label>
-          <input
-            type="range"
-            id="kate"
-            class="slider"
-            name="kate"
-            min="0"
-            max="10"
-          />
-          <label for="kate">Te</label><br />
-          <br />
-          <button type="submit">Submit form</button>
+          <table>
+            <thead>
+            <tr>
+              <td></td>
+              <td class="question">
+                <label for="name">Navn:</label>
+                <input type="text" name="Navn" id="name">
+              </td>
+              <td></td>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- mornat - morgenfugl eller natteravn -->
+            <tr>
+              <td class="left"></td>
+              <td class="question">
+                <label for="mornat">Er du en morgenfugl eller natteravn?:</label>
+              </td>
+              <td class="right"></td>
+            </tr>
+            <tr>
+              <td class="left"><label for="mornat">Morgenfugl</label></td>
+              <td class="middle">
+                <input
+                      type="range"
+                      id="mornat"
+                      class="slider"
+                      name="mornat"
+                      min="0"
+                      max="10">
+              </td>
+              <td class="right"><label for="mornat">Natteravn</label></td>
+            </tr>
+            <!-- alsa - alene eller sammen -->
+            <tr>
+              <td class="left"></td>
+              <td class="question"><label for="alsa">Liker du best å jobbe alene eller med andre?:</label></td>
+              <td class="right"></td>
+            </tr>
+            <tr>
+              <td class="left"><label for="alsa">Jobbe med andre :)</label></td>
+              <td class="middle">
+                <input
+                      type="range"
+                      id="alsa"
+                      class="slider"
+                      name="alsa"
+                      min="0"
+                      max="10">
+              </td>
+              <td class="right"><label for="alsa">Jobbe for seg selv :(</label></td>
+            </tr>
+            <!-- borf - bakhistorie eller rett fram -->
+            <tr>
+              <td class="left"></td>
+              <td class="question">
+                <label for="borf">Liker du historien bak ting eller kutte ut historien?:</label>
+              </td>
+              <td class="right"></td>
+            </tr>
+            <tr>
+              <td class="left"><label for="borf">Fortell meg :)</label></td>
+              <td class="middle">
+                <input
+                        type="range"
+                        id="borf"
+                        class="slider"
+                        name="borf"
+                        min="0"
+                        max="10">
+              </td>
+              <td class="right"><label for="borf">Kutt ut :(</label></td>
+            </tr>
+            <!-- snvi - snakke om det eller gå videre -->
+            <tr>
+              <td class="left"></td>
+              <td class="question">
+                <label for="snvi">Foretrekker du å snakke om det eller gå videre?:</label>
+              </td>
+              <td class="right"></td>
+            </tr>
+            <tr>
+              <td class="left"><label for="snvi">Snakke om det</label></td>
+              <td class="middle">
+                <input
+                      type="range"
+                      id="snvi"
+                      class="slider"
+                      name="snvi"
+                      min="0"
+                      max="10">
+              </td>
+              <td class="right"><label for="snvi">Gå videre</label></td>
+            </tr>
+            <!-- vemo - verbal prosessor eller mental prosessor -->
+            <tr>
+              <td class="left"></td>
+              <td class="question">
+                <label for="vemo">Jobber du bedre verbalt eller mentalt?:</label>
+              </td>
+              <td class="right"></td>
+            </tr>
+            <tr>
+              <td class="left"><label for="vemo">Verbal prosessor</label></td>
+              <td class="middle">
+                <input
+                      type="range"
+                      id="vemo"
+                      class="slider"
+                      name="vemo"
+                      min="0"
+                      max="10">
+              </td>
+              <td class="right"><label for="vemo">Mental prosessor</label></td>
+            </tr>
+            <!-- sepr - sett av tid eller prate -->
+            <tr>
+              <td class="left"></td>
+              <td class="question">
+                <label for="sepr">Sett av tid til å prate eller avbryt for å prate?:</label>
+              </td>
+              <td class="right"></td>
+            </tr>
+            <tr>
+              <td class="left"><label for="sepr">Sett av tid</label></td>
+              <td class="middle">
+                <input
+                      type="range"
+                      id="sepr"
+                      class="slider"
+                      name="sepr"
+                      min="0"
+                      max="10">
+              </td>
+              <td class="right"><label for="sepr">Avbryt for å prate</label></td>
+            </tr>
+            <!-- vich - video eller chat -->
+            <tr>
+              <td class="left"></td>
+              <td class="question">
+                <label for="vich">Liker du best video eller chat?:</label>
+              </td>
+              <td class="right"></td>
+            </tr>
+            <tr>
+              <td class="left"><label for="vich">Video</label></td>
+              <td class="middle">
+                <input
+                      type="range"
+                      id="vich"
+                      class="slider"
+                      name="vich"
+                      min="0"
+                      max="10">
+              </td>
+              <td class="right"><label for="vich">Chat</label></td>
+            </tr>
+            <!-- fafl - fast eller fleksibel timeplan -->
+            <tr>
+              <td class="left"></td>
+              <td class="question">
+                <label for="fafl">Liker du best fast eller fleksibel timeplan?:</label>
+              </td>
+              <td class="right"></td>
+            </tr>
+            <tr>
+              <td class="left"><label for="fafl">Fast</label></td>
+              <td class="middle">
+                <input
+                        type="range"
+                        id="fafl"
+                        class="slider"
+                        name="fafl"
+                        min="0"
+                        max="10">
+              </td>
+              <td class="right"><label for="fafl">Fleksibel</label></td>
+            </tr>
+            <!-- wima - Windows eller macOS -->
+            <tr>
+              <td class="left"></td>
+              <td class="question">
+                <label for="wima">Liker du best Windows eller macOS?:</label>
+              </td>
+              <td class="right"></td>
+            </tr>
+            <tr>
+              <td class="left"><label for="wima">Windows</label></td>
+              <td class="middle">
+                <input
+                        type="range"
+                        id="wima"
+                        class="slider"
+                        name="wima"
+                        min="0"
+                        max="10">
+              </td>
+              <td class="right"><label for="wima">macOS</label></td>
+            </tr>
+            <!-- kate - kaffe eller te -->
+            <tr>
+              <td class="left"></td>
+              <td class="question">
+                <label for="kate">Liker du best kaffé eller te?:</label>
+              </td>
+              <td class="right"></td>
+            </tr>
+            <tr>
+              <td class="left"><label for="kate">Kaffé</label></td>
+              <td class="middle">
+                <input
+                        type="range"
+                        id="kate"
+                        class="slider"
+                        name="kate"
+                        min="0"
+                        max="10">
+              </td>
+              <td class="right"><label for="kate">Te</label></td>
+            </tr>
+            <tr>
+              <td class="left"></td>
+              <td class="question"><button type="submit">Submit form</button></td>
+              <td class="right"></td>
+            </tr>
+            </tbody>
+          </table>
         </fieldset>
       </form>
       <div class="results">
