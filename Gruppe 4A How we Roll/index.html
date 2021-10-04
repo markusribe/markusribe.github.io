@@ -35,18 +35,39 @@
       /* CSS area define */
       .Header {
         grid-area: Header;
+        background-image: linear-gradient(to right, plum, cyan, lightgreen);
       }
       .Header > h1 {
         text-align: center;
+        font-size: 40px;
+        line-height: 20px;
       }
       .Navbar {
         grid-area: Navbar;
         text-align: center;
+        background-color: lightgrey;
+        white-space: nowrap;
+        padding: 0;
       }
       .Navbar > ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
+      }
+      .Navbar>div a{
+        display: inline-block;
+        text-align: center;
+        font-size: 25px;
+        padding:0;
+        width: 50%;
+        color: black;
+        line-height: 75px;
+        text-decoration: none;
+        font-family: sans-serif, Arial;
+      }
+      .Navbar>div a:hover{
+        background-color: black;
+        color: white;
       }
       .Håkon {
         grid-area: Håkon;
@@ -177,10 +198,10 @@
           <h1>Visittkort Gruppe 4A & How we roll</h1>
         </section>
         <section class="grid-area Navbar">
-          <ul>
-            <li><a href="how-we-roll.html">How-we-roll</a></li>
-            <li><a href="hwr-report.html">Hwr-report</a></li>
-          </ul>
+          <div>
+            <a href="how-we-roll.html">How we roll</a>
+            <a href="hwr-report.html">Hwr-report</a>
+          </div>
         </section>
         <section class="grid-area Håkon">
           <h1>Universitet i Agder</h1>
