@@ -1,319 +1,319 @@
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/html">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gruppe 4a visittkort og How we roll</title>
-    <style>
-      /* CSS GRID */
-      @media (min-width: 800px) {
-        .visittkort {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          justify-content: center;
-          grid-gap: 30px;
-          grid-template-areas:
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gruppe 4a visittkort og How we roll</title>
+  <style>
+    /* CSS GRID */
+    @media (min-width: 800px) {
+      .visittkort {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        grid-gap: 30px;
+        grid-template-areas:
             "Header Header Header"
             "Navbar Navbar Navbar "
             "Håkon Sebastian Jovica "
             "SebastianS Katrine Simon"
             "Markus . .";
-        }
       }
+    }
 
-      .grid-area {
-        padding: 1em;
-        border: solid 1px;
-        box-shadow: 10px 10px 10px black;
-      }
-      /* Wrapper CSS */
-      .Wrapper {
-        padding: 30px;
-      }
-      /* CSS area define */
-      .Header {
-        grid-area: Header;
-        background-image: linear-gradient(to right, plum, cyan, lightgreen);
-      }
-      .Header > h1 {
-        text-align: center;
-        font-size: 40px;
-        line-height: 20px;
-      }
-      .Navbar {
-        grid-area: Navbar;
-        text-align: center;
-        background-color: lightgrey;
-        white-space: nowrap;
-        padding: 0;
-      }
-      .Navbar > ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-      .Navbar>div a{
-        display: inline-block;
-        text-align: center;
-        font-size: 25px;
-        padding:0;
-        width: 50%;
-        color: black;
-        line-height: 75px;
-        text-decoration: none;
-        font-family: sans-serif, Arial;
-      }
-      .Navbar>div a:hover{
-        background-color: black;
-        color: white;
-      }
-      .Håkon {
-        grid-area: Håkon;
-        font-family: sans-serif, Arial;
-        background-color: yellow;
-      }
-      .Sebastian {
-        grid-area: Sebastian;
-        background-image: linear-gradient(to right, #667eea, #764ba2);
-        margin: 0;
-      }
-      .Sebastian > img {
-        float: right;
-        width: 150px;
-        border-radius: 50% 25%;
-        border: solid 1px;
-      }
-      .Sebastian > p {
-        font-size: 12px;
-      }
-      .Sebastian > h3 {
-        font-weight: normal;
-      }
+    .grid-area {
+      padding: 1em;
+      border: solid 1px;
+      box-shadow: 10px 10px 10px black;
+    }
+    /* Wrapper CSS */
+    .Wrapper {
+      padding: 30px;
+    }
+    /* CSS area define */
+    .Header {
+      grid-area: Header;
+      background-image: linear-gradient(to right, plum, cyan, lightgreen);
+    }
+    .Header > h1 {
+      text-align: center;
+      font-size: 40px;
+      line-height: 20px;
+    }
+    .Navbar {
+      grid-area: Navbar;
+      text-align: center;
+      background-color: lightgrey;
+      white-space: nowrap;
+      padding: 0;
+    }
+    .Navbar > ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    .Navbar>div a{
+      display: inline-block;
+      text-align: center;
+      font-size: 25px;
+      padding:0;
+      width: 50%;
+      color: black;
+      line-height: 75px;
+      text-decoration: none;
+      font-family: sans-serif, Arial;
+    }
+    .Navbar>div a:hover{
+      background-color: black;
+      color: white;
+    }
+    .Håkon {
+      grid-area: Håkon;
+      font-family: sans-serif, Arial;
+      background-color: yellow;
+    }
+    .Sebastian {
+      grid-area: Sebastian;
+      background-image: linear-gradient(to right, #667eea, #764ba2);
+      margin: 0;
+    }
+    .Sebastian > img {
+      float: right;
+      width: 150px;
+      border-radius: 50% 25%;
+      border: solid 1px;
+    }
+    .Sebastian > p {
+      font-size: 12px;
+    }
+    .Sebastian > h3 {
+      font-weight: normal;
+    }
 
-      #navnseb {
-        font-weight: bold;
-        font-size: 18px;
-      }
+    #navnseb {
+      font-weight: bold;
+      font-size: 18px;
+    }
 
-      .Jovica {
-        grid-area: Jovica;
-        font-family: Arial, Helvetica, sans-serif;
-        background-image: url("IMG/uia logo.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: right;
-        background-color: black;
-        color: white;
-      }
-      .Jovica > h1 {
-        text-align: left;
-      }
-      .email {
-        color: white;
-      }
-      .SebastianS {
-        grid-area: SebastianS;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      .Katrine {
-        grid-area: Katrine;
-        background-image: url("IMG/techBakgrunn.png");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-      }
-      .Katrine > div {
-        display: flex;
-        flex-wrap: nowrap;
-      }
-      #navnkat {
-        line-height: 30px;
-        font-size: 20px;
-        font-weight: bold;
-      }
-      #skole {
-        text-transform: uppercase;
-        font-size: 18px;
-      }
-      #KH {
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 20px;
-      }
-      #link {
-        text-decoration: none;
-        font-size: 10px;
-        color: black;
-      }
-      #bilde {
-        height: 120px;
-        border-radius: 50%;
-        border: 1px solid black;
-      }
-      .info {
-        text-transform: uppercase;
-        font-size: 10px;
-        line-height: 8px;
-      }
+    .Jovica {
+      grid-area: Jovica;
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: url("IMG/uia logo.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: right;
+      background-color: black;
+      color: white;
+    }
+    .Jovica > h1 {
+      text-align: left;
+    }
+    .email {
+      color: white;
+    }
+    .SebastianS {
+      grid-area: SebastianS;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .Katrine {
+      grid-area: Katrine;
+      background-image: url("IMG/techBakgrunn.png");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    .Katrine > div {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    #navnkat {
+      line-height: 30px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    #skole {
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+    #KH {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+    }
+    #link {
+      text-decoration: none;
+      font-size: 10px;
+      color: black;
+    }
+    #bilde {
+      height: 120px;
+      border-radius: 50%;
+      border: 1px solid black;
+    }
+    .info {
+      text-transform: uppercase;
+      font-size: 10px;
+      line-height: 8px;
+    }
 
-      .Simon {
-        grid-area: Simon;
-        background-color: rgba(189, 4, 46, 255);
-        background-image: url("IMG/uia logo.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
+    .Simon {
+      grid-area: Simon;
+      background-color: rgba(189, 4, 46, 255);
+      background-image: url("IMG/uia logo.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
 
-      .Markus {
-        grid-area: Markus;
-        font-family: sans-serif, Arial;
-        background-image: url("IMG/uia logo.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: right;
-      }
-      .Markus > h1 {
-        text-align: left;
-      }
-      .Markus > p {
-        line-height: 8px;
-        font-size: 10px;
-      }
-      .Markus > a {
-        line-height: 8px;
-        font-size: 10px;
-        text-decoration: none;
-        color: black;
-      }
-    </style>
-  </head>
-  <!-- Wrapper -->
-  <body>
-    <div class="Wrapper">
-      <!-- HTML Vistittkort info -->
-      <div class="visittkort">
-        <section class="grid-area Header">
-          <h1>Visittkort Gruppe 4A & How we roll</h1>
-        </section>
-        <section class="grid-area Navbar">
-          <div>
-            <a href="how-we-roll.html">How we roll</a>
-            <a href="hwr-report.html">Hwr-report</a>
-          </div>
-        </section>
-        <section class="grid-area Håkon">
-          <h1>Universitet i Agder</h1>
-          <p>Håkon</p>
-          <p>IT og informasjonssystemer</p>
-          <p>Github: https://github.com/Haakonbk</p>
-          <p>Mail: Haakonbk@uia.no</p>
-        </section>
-        <section class="grid-area Sebastian">
-          <img src="/Gruppe 4A How we Roll/IMG/sebby.jpg" alt="SebastianM" />
-          <h3>UNIVERSITETET I AGDER</h3>
-          <p>FAKULTET FOR SAMFUNNSVITENSKAP</p>
-          <p>IT OG INFORMASJONSSYSTEMER</p>
+    .Markus {
+      grid-area: Markus;
+      font-family: sans-serif, Arial;
+      background-image: url("IMG/uia logo.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+    .Markus > h1 {
+      text-align: left;
+    }
+    .Markus > p {
+      line-height: 8px;
+      font-size: 10px;
+    }
+    .Markus > a {
+      line-height: 8px;
+      font-size: 10px;
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+</head>
+<!-- Wrapper -->
+<body>
+<div class="Wrapper">
+  <!-- HTML Vistittkort info -->
+  <div class="visittkort">
+    <section class="grid-area Header">
+      <h1>Visittkort Gruppe 4A & How we roll</h1>
+    </section>
+    <section class="grid-area Navbar">
+      <div>
+        <a href="how-we-roll.html">How we roll</a>
+        <a href="hwr-report.html">Hwr-report</a>
+      </div>
+    </section>
+    <section class="grid-area Håkon">
+      <h1>Universitet i Agder</h1>
+      <p>Håkon</p>
+      <p>IT og informasjonssystemer</p>
+      <p>Github: https://github.com/Haakonbk</p>
+      <p>Mail: Haakonbk@uia.no</p>
+    </section>
+    <section class="grid-area Sebastian">
+      <img src="/Gruppe 4A How we Roll/IMG/sebby.jpg" alt="SebastianM" />
+      <h3>UNIVERSITETET I AGDER</h3>
+      <p>FAKULTET FOR SAMFUNNSVITENSKAP</p>
+      <p>IT OG INFORMASJONSSYSTEMER</p>
+      <br />
+      <p id="navnseb">Sebastian Midtskogen</p>
+      <p>sebastiam@uia.no</p>
+      <a href="https://github.com/sebmid">Github</a>
+      <p>Website</p>
+    </section>
+    <!-- Jovica Vistittkort -->
+    <section class="grid-area Jovica">
+      <h1>Universitet i Agder</h1>
+      <p>Jovica Ugrinic</p>
+      <p>Fakultet for samfunnsvitenskap</p>
+      <p>IT og informasjonssystemer</p>
+      <br /><br />
+      <a class="email" href="jovicu08@uia.no"> Jovicu08@uia.no</a>
+      <br />
+      <a class="email" href="https://github.com/Jovica88/jovica88.github.io"
+      >Jovica88.github.io</a
+      >
+    </section>
+    <!-- Jovica Vistittkort SLUTT -->
+    <section class="grid-area SebastianS">
+      <h1 style="color: red">Universitetet i Agder</h1>
+      <p style="font-size: 12px"><i>Fakultetet for samfunnsvitenskap</i></p>
+      <p style="font-size: 12px">IT og informasjonssystemer</p>
+      <br />
+      <p style="color: blue"><b>Sebastian Salte</b></p>
+      <p style="font-size: 12px">sebas18@uia.no</p>
+      <a style="font-size: 12px" href="https://github.com/sebastiansalte"
+      >Github</a
+      >
+    </section>
+    <!-- Katrine's visittkort -->
+    <section class="grid-area Katrine">
+      <div id="KH">
+        <!-- Informasjon i kortet -->
+        <div>
+          <span id="skole">Universitetet i Agder</span>
+          <br /><br /><br />
+          <span id="navnkat">Katrine Huynh</span>
           <br />
-          <p id="navnseb">Sebastian Midtskogen</p>
-          <p>sebastiam@uia.no</p>
-          <a href="https://github.com/sebmid">Github</a>
-          <p>Website</p>
-        </section>
-        <!-- Jovica Vistittkort -->
-        <section class="grid-area Jovica">
-          <h1>Universitet i Agder</h1>
-          <p>Jovica Ugrinic</p>
-          <p>Fakultet for samfunnsvitenskap</p>
-          <p>IT og informasjonssystemer</p>
-          <br /><br />
-          <a class="email" href="jovicu08@uia.no"> Jovicu08@uia.no</a>
-          <br />
-          <a class="email" href="https://github.com/Jovica88/jovica88.github.io"
-            >Jovica88.github.io</a
-          >
-        </section>
-        <!-- Jovica Vistittkort SLUTT -->
-        <section class="grid-area SebastianS">
-          <h1 style="color: red">Universitetet i Agder</h1>
-          <p style="font-size: 12px"><i>Fakultetet for samfunnsvitenskap</i></p>
-          <p style="font-size: 12px">IT og informasjonssystemer</p>
-          <br />
-          <p style="color: blue"><b>Sebastian Salte</b></p>
-          <p style="font-size: 12px">sebas18@uia.no</p>
-          <a style="font-size: 12px" href="https://github.com/sebastiansalte"
-            >Github</a
-          >
-        </section>
-        <!-- Katrine's visittkort -->
-        <section class="grid-area Katrine">
-          <div id="KH">
-            <!-- Informasjon i kortet -->
-            <div>
-              <span id="skole">Universitetet i Agder</span>
-              <br /><br /><br />
-              <span id="navnkat">Katrine Huynh</span>
-              <br />
-              <span class="info">
+          <span class="info">
                 <strong>Fakultet for samfunnsvitenskap</strong>
               </span>
-              <br />
-              <span class="info"> It og informasjonssystemer<br /></span>
-              <a id="link" href="https://github.com/Kaduhuy">
-                github.com/Kaduhuy</a
-              >
-              <br />
-              <span style="font-size: 10px">dkhuynh@uia.no</span>
-            </div>
-            <div style="width: 5%"></div>
-            <!-- bilde av Katrine-->
-            <div>
-              <img id="bilde" src="IMG/Katrine.jpg" alt="Katrine" />
-            </div>
-          </div>
-        </section>
+          <br />
+          <span class="info"> It og informasjonssystemer<br /></span>
+          <a id="link" href="https://github.com/Kaduhuy">
+            github.com/Kaduhuy</a
+          >
+          <br />
+          <span style="font-size: 10px">dkhuynh@uia.no</span>
+        </div>
+        <div style="width: 5%"></div>
+        <!-- bilde av Katrine-->
+        <div>
+          <img id="bilde" src="IMG/Katrine.jpg" alt="Katrine" />
+        </div>
+      </div>
+    </section>
 
-        <section class="grid-area Simon">
-          <div style="text-align: center">
-            <br /><br /><span
+    <section class="grid-area Simon">
+      <div style="text-align: center">
+        <br /><br /><span
               style="
                 font-family: sans-serif, 'Times New Roman';
                 font-size: 30px;
               "
-              >Universitet i Agder</span
-            >
-            <br /><br /><br /><br /><br /><br />
-            <div>
+      >Universitet i Agder</span
+      >
+        <br /><br /><br /><br /><br /><br />
+        <div>
               <span style="text-transform: uppercase; font-size: 15px">
                 <br />IT og Informasjonssystemer</span
               >
-            </div>
-            <span
-              style="font-family: 'Brush Script MT', serif; font-size: 20px"
-            >
+        </div>
+        <span
+                style="font-family: 'Brush Script MT', serif; font-size: 20px"
+        >
               Simon Duarte Andersen </span
-            ><br />
-            <div style="font-size: 13px">
-              <span>Email: simoda18@uia.no</span><br />
-              <a
-                href="https://github.com/SimonDuarte"
-                style="text-decoration: none; color: black"
-              >
-                github.com/SimonDuarte</a
-              >
-            </div>
-          </div>
-        </section>
-        <section class="grid-area Markus">
-          <h1>Universitetet i Agder</h1>
-          <p><strong>Markus Ribe</strong></p>
-          <p>Fakultet for samfunnsvitenskap</p>
-          <p>IT og informasjonssystemer</p>
-          <a href="https://github.com/markusribe">github.com/markusribe</a>
-          <p>markusri@uia.no</p>
-        </section>
+        ><br />
+        <div style="font-size: 13px">
+          <span>Email: simoda18@uia.no</span><br />
+          <a
+                  href="https://github.com/SimonDuarte"
+                  style="text-decoration: none; color: black"
+          >
+            github.com/SimonDuarte</a
+          >
+        </div>
       </div>
-    </div>
-  </body>
+    </section>
+    <section class="grid-area Markus">
+      <h1>Universitetet i Agder</h1>
+      <p><strong>Markus Ribe</strong></p>
+      <p>Fakultet for samfunnsvitenskap</p>
+      <p>IT og informasjonssystemer</p>
+      <a href="https://github.com/markusribe">github.com/markusribe</a>
+      <p>markusri@uia.no</p>
+    </section>
+  </div>
+</div>
+</body>
 </html>
