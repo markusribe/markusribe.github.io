@@ -80,7 +80,7 @@
           </div>
         </section>
     </div>
-    <div id=form></div>
+    <div id="form"></div>
     <br>
     <div id="Navn1"></div>
     <div id="mornat1"></div>
@@ -90,6 +90,20 @@
     <div id="mornat2"></div>
     <div id="alsa2"></div>
     <script>
+      fetch('https://bacit.info/hwr/20210930124013-14381db014f163f17bffdb5238b5657c.json')
+        .then(response => response.json())
+        .then(data => { 
+          let form = document.querySelector("#form");
+          Object.entries(data).forEach(([key , value]) => {
+            form.innerText += `${key}: ${value}`;
+            //form.innerText += (`${key}: ${value}`)
+            //form.innerHTML += (`${key}: ${value}`)
+          });
+          data.forEach((data) => {
+            form.textContent += $data.Name;
+          });
+      });
+
       //henter formen fra server
       fetch('https://bacit.info/hwr/20210930124013-14381db014f163f17bffdb5238b5657c.json')
         .then(response => response.json())
