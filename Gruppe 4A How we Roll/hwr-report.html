@@ -82,7 +82,7 @@
     </div>
     <div id="debug"></div>
     <br>
-    <canvas id="report"></canvas>
+    <canvas id="report" width=500px></canvas>
     <br>
     <div id="form"></div>
     <br>
@@ -105,32 +105,34 @@
      
       let debug = document.querySelector("#debug");
           Object.entries(data).forEach(([key , value]) => {
-            debug.innerText += `${key}: ${value}`;
+            debug.innerText += `${key}: ${value} |`;
             //form.innerText += (`${key}: ${value}`)
             //form.innerHTML += (`${key}: ${value}`)
           });
-          data.forEach((data) => {
-            debug.textContent += $data.Name;
-          });
-//TODO fix canvas
-          var canvas = document.getElementById('report');
-          var context = canvas.getContext('2d');
+          // data.forEach((data) => {
+          //   debug.textContent += $data.Name;
+          // });
+         //TODO fix canvas
+         var canvas = document.getElementById('report');
+         var context = canvas.getContext('2d');
 
           context.font = '14px serif';
-          context.fillText('mornat', 24, 24);
-          context.fillText('alsa', 24, 74);
+          context.fillText('Morgenfugl', 15, 24);
+          context.fillText('Natteravn', 315, 24);
+          context.fillText('Jobbe alene', 15, 74);
+          context.fillText('Jobbe sammen', 315, 74);
 
           context.beginPath();
-          context.moveTo(70,20);
-          context.lineTo(200,20);
+          context.moveTo(100,20);
+          context.lineTo(300,20);
 
           //context.beginPath();
-          context.moveTo(70,70);
-          context.lineTo(170,70);
+          context.moveTo(100,70);
+          context.lineTo(300,70);
           context.stroke();
 
 
-          var X = 70 + parseInt(data.mornat, 10);
+          var X = 100 + parseInt(data.mornat, 10);
           var Y = 20;
           var R = 5;
           context.beginPath();
@@ -142,7 +144,7 @@
           context.stroke();
           // context.closePath();
 
-          var X = 70 + parseInt(data.alsa, 10);
+          var X = 100 + parseInt(data.alsa, 10);
           var Y = 70;
           var R = 5;
           context.beginPath();
@@ -154,38 +156,38 @@
           context.stroke();
       });
 
-      fetch('https://bacit.info/hwr/20210930124013-14381db014f163f17bffdb5238b5657c.json')
-        .then(response => response.json())
-        .then(data => { 
-          let form = document.querySelector("#form");
-          Object.entries(data).forEach(([key , value]) => {
-            form.innerText += `${key}: ${value}`;
-            //form.innerText += (`${key}: ${value}`)
-            //form.innerHTML += (`${key}: ${value}`)
-          });
-          data.forEach((data) => {
-            form.textContent += $data.Name;
-          });
-        });
+      // fetch('https://bacit.info/hwr/20210930124013-14381db014f163f17bffdb5238b5657c.json')
+      //   .then(response => response.json())
+      //   .then(data => { 
+      //     let form = document.querySelector("#form");
+      //     Object.entries(data).forEach(([key , value]) => {
+      //       form.innerText += `${key}: ${value}`;
+      //       //form.innerText += (`${key}: ${value}`)
+      //       //form.innerHTML += (`${key}: ${value}`)
+      //     });
+      //     data.forEach((data) => {
+      //       form.textContent += $data.Name;
+      //     });
+      //   });
 
-      //henter formen fra server
-      fetch('https://bacit.info/hwr/20210930124013-14381db014f163f17bffdb5238b5657c.json')
-        .then(response => response.json())
-        .then(data => { 
-          console.log(data)
-          document.querySelector("#Navn1").innerText = "Navn: " + data.Navn
-          document.querySelector("#mornat1").innerText = "Morgenfugl eller natteravn?: " + data.mornat
-          document.querySelector("#alsa1").innerText = "Jobbe alene eller sammen? :" + data.alsa
-      });
+      // //henter formen fra server
+      // fetch('https://bacit.info/hwr/20210930124013-14381db014f163f17bffdb5238b5657c.json')
+      //   .then(response => response.json())
+      //   .then(data => { 
+      //     console.log(data)
+      //     document.querySelector("#Navn1").innerText = "Navn: " + data.Navn
+      //     document.querySelector("#mornat1").innerText = "Morgenfugl eller natteravn?: " + data.mornat
+      //     document.querySelector("#alsa1").innerText = "Jobbe alene eller sammen? :" + data.alsa
+      // });
   
-      fetch('https://bacit.info/hwr/20210930130723-02f83a4e525df6caa85c513397592e48.json')
-      .then(response => response.json())
-      .then(data => { 
-          console.log(data)
-          document.querySelector("#Navn2").innerText = "Navn: " + data.Navn
-          document.querySelector("#mornat2").innerText = "Morgenfugl eller natteravn?: " + data.mornat
-          document.querySelector("#alsa2").innerText = "Jobbe alene eller sammen? :" + data.alsa
-      });
+      // fetch('https://bacit.info/hwr/20210930130723-02f83a4e525df6caa85c513397592e48.json')
+      // .then(response => response.json())
+      // .then(data => { 
+      //     console.log(data)
+      //     document.querySelector("#Navn2").innerText = "Navn: " + data.Navn
+      //     document.querySelector("#mornat2").innerText = "Morgenfugl eller natteravn?: " + data.mornat
+      //     document.querySelector("#alsa2").innerText = "Jobbe alene eller sammen? :" + data.alsa
+      // });
 
     </script>
   </body>
