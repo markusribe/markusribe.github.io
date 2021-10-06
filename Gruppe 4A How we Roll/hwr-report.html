@@ -80,6 +80,10 @@
           </div>
         </section>
     </div>
+    <div id="debug"></div>
+    <br>
+    <canvas id="report"></canvas>
+    <br>
     <div id="form"></div>
     <br>
     <div id="Navn1"></div>
@@ -90,6 +94,66 @@
     <div id="mornat2"></div>
     <div id="alsa2"></div>
     <script>
+      //canvas visuell
+    var canvas = document.getElementById('report');
+    var context = canvas.getContext('2d');
+
+
+    fetch("https://bacit.info/hwr/20211006082348-bc24eba593b96e7f098033aacccbe4a3.json", {cache: 'no-cache'})
+    .then(response => response.json())
+    .then(data => {
+     
+      let debug = document.querySelector("#debug");
+          Object.entries(data).forEach(([key , value]) => {
+            debug.innerText += `${key}: ${value}`;
+            //form.innerText += (`${key}: ${value}`)
+            //form.innerHTML += (`${key}: ${value}`)
+          });
+          data.forEach((data) => {
+            debug.textContent += $data.Name;
+          });
+//TODO fix canvas
+          var canvas = document.getElementById('report');
+          var context = canvas.getContext('2d');
+
+          context.font = '14px serif';
+          context.fillText('mornat', 24, 24);
+          context.fillText('alsa', 24, 74);
+
+          context.beginPath();
+          context.moveTo(70,20);
+          context.lineTo(200,20);
+
+          //context.beginPath();
+          context.moveTo(70,70);
+          context.lineTo(170,70);
+          context.stroke();
+
+
+          var X = 70 + parseInt(data.mornat, 10);
+          var Y = 20;
+          var R = 5;
+          context.beginPath();
+          context.arc(X, Y, R, 0, 2*Math.PI, false);
+          context.fillStyle = "lightgreen";
+          context.fill();
+          context.lineWidth = 1;
+          context.strokeStyle = "black";
+          context.stroke();
+          // context.closePath();
+
+          var X = 70 + parseInt(data.alsa, 10);
+          var Y = 70;
+          var R = 5;
+          context.beginPath();
+          context.arc(X, Y, R, 0, 2*Math.PI, false);
+          context.fillStyle = "red";
+          context.fill();
+          context.lineWidth = 1;
+          context.strokeStyle = "black";
+          context.stroke();
+      });
+
       fetch('https://bacit.info/hwr/20210930124013-14381db014f163f17bffdb5238b5657c.json')
         .then(response => response.json())
         .then(data => { 
@@ -102,7 +166,7 @@
           data.forEach((data) => {
             form.textContent += $data.Name;
           });
-      });
+        });
 
       //henter formen fra server
       fetch('https://bacit.info/hwr/20210930124013-14381db014f163f17bffdb5238b5657c.json')
