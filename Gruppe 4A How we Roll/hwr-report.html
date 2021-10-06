@@ -117,19 +117,28 @@
          var context = canvas.getContext('2d');
 
           context.font = '14px serif';
+          //tegner Texten til morna
           context.fillText('Morgenfugl', 15, 24);
           context.fillText('Natteravn', 315, 24);
+          //tegner Texten til alsa
           context.fillText('Jobbe alene', 15, 74);
           context.fillText('Jobbe sammen', 315, 74);
+          //tegner texten til borf
+          context.fillText('Fortell meg', 15, 124);
+          context.fillText('Kutt ut', 315, 124);
 
           context.beginPath();
           context.moveTo(100,20);
           context.lineTo(300,20);
 
-          //context.beginPath();
           context.moveTo(100,70);
           context.lineTo(300,70);
           context.stroke();
+
+          context.moveTo(100,120);
+          context.lineTo(300,120);
+          context.stroke();
+
 
 
           var X = 100 + parseInt(data.mornat, 10);
@@ -142,7 +151,6 @@
           context.lineWidth = 1;
           context.strokeStyle = "black";
           context.stroke();
-          // context.closePath();
 
           var X = 100 + parseInt(data.alsa, 10);
           var Y = 70;
@@ -150,6 +158,17 @@
           context.beginPath();
           context.arc(X, Y, R, 0, 2*Math.PI, false);
           context.fillStyle = "red";
+          context.fill();
+          context.lineWidth = 1;
+          context.strokeStyle = "black";
+          context.stroke();
+
+          var X = 100 + parseInt(data.borf * 20); //denne funker kanskje ikke på alle datasett
+          var Y = 120;
+          var R = 5;
+          context.beginPath();
+          context.arc(X, Y, R, 0, 2*Math.PI, false);
+          context.fillStyle = "yellow";
           context.fill();
           context.lineWidth = 1;
           context.strokeStyle = "black";
