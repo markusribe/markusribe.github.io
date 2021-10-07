@@ -158,11 +158,11 @@
           context.moveTo(100,170);
           context.lineTo(300,170);
           context.stroke();
-          //tegner strek 4
+          //tegner strek 5
           context.moveTo(100,220);
           context.lineTo(300,220);
           context.stroke();
-          //tegner strek 5
+          //tegner strek 6
           context.moveTo(100,270);
           context.lineTo(300,270);
           context.stroke();
@@ -182,6 +182,11 @@
           context.stroke();
           context.moveTo(100,470);
           context.lineTo(300,470);
+
+          //tegner strek 11
+          context.stroke();
+          context.moveTo(100,520);
+          context.lineTo(300,520);
           
 
           //må gjøres på hver fetch
@@ -236,7 +241,62 @@
           context.strokeStyle = "black";
           context.stroke();
 
+          var X = 100 + parseInt(data.sepr * 20);
+          var Y = 270;
+          var R = 5;
+          context.beginPath();
+          context.arc(X, Y, R, 0, 2*Math.PI, false);
+          context.fillStyle = "yellow";
+          context.fill();
+          context.strokeStyle = "black";
+          context.stroke();
+
+          var X = 100 + parseInt(data.vich * 20);
+          var Y = 320;
+          var R = 5;
+          context.beginPath();
+          context.arc(X, Y, R, 0, 2*Math.PI, false);
+          context.fillStyle = "yellow";
+          context.fill();
+          context.lineWidth = 1;
+          context.strokeStyle = "black";
+          context.stroke();
+
+          var X = 100 + parseInt(data.fafl * 20);
+          var Y = 370;
+          var R = 5;
+          context.beginPath();
+          context.arc(X, Y, R, 0, 2*Math.PI, false);
+          context.fillStyle = "yellow";
+          context.fill();
+          context.lineWidth = 1;
+          context.strokeStyle = "black";
+          context.stroke();
+
+
+          var X = 100 + parseInt(data.wima * 20);
+          var Y = 420;
+          var R = 5;
+          context.beginPath();
+          context.arc(X, Y, R, 0, 2*Math.PI, false);
+          context.fillStyle = "yellow";
+          context.fill();
+          context.lineWidth = 1;
+          context.strokeStyle = "black";
+          context.stroke();
+
+          var X = 100 + parseInt(data.kate * 20);
+          var Y = 470;
+          var R = 5;
+          context.beginPath();
+          context.arc(X, Y, R, 0, 2*Math.PI, false);
+          context.fillStyle = "yellow";
+          context.fill();
+          context.lineWidth = 1;
+          context.strokeStyle = "black";
+          context.stroke();
           
+      
       });
 
       // fetch('https://bacit.info/hwr/20210930124013-14381db014f163f17bffdb5238b5657c.json')
