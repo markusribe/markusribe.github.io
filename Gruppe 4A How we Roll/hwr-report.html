@@ -66,6 +66,19 @@
         background-color: black;
         color: white;
       }
+
+      /* Style til how we roll visualisering */
+      canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 500px;
+    height: 1000px;
+      }
+
+
     </style>
   </head>
   <body>
@@ -82,7 +95,7 @@
     </div>
     <div id="debug"></div>
     <br>
-    <canvas id="report" width=500px></canvas>
+    <canvas class="report" id="report" width=500px height=1000px></canvas>
     <br>
     <div id="form"></div>
     <br>
@@ -116,7 +129,7 @@
          var context = canvas.getContext('2d');
 
           context.font = '14px serif';
-          //tegner Texten til morna
+          //tegner Texten til mornat
           context.fillText('Morgenfugl', 15, 24);
           context.fillText('Natteravn', 315, 24);
           //tegner Texten til alsa
@@ -125,22 +138,52 @@
           //tegner texten til borf
           context.fillText('Fortell meg', 15, 124);
           context.fillText('Kutt ut', 315, 124);
-
+          
+          //tegner strek 1
           context.beginPath();
           context.moveTo(100,20);
           context.lineTo(300,20);
-
+          //tegner strek 2
           context.moveTo(100,70);
           context.lineTo(300,70);
           context.stroke();
-
+          //tegner strek 3
           context.moveTo(100,120);
           context.lineTo(300,120);
           context.stroke();
+          //tegner strek 4
+          context.moveTo(100,170);
+          context.lineTo(300,170);
+          context.stroke();
+          //tegner strek 4
+          context.moveTo(100,220);
+          context.lineTo(300,220);
+          context.stroke();
+          //tegner strek 5
+          context.moveTo(100,270);
+          context.lineTo(300,270);
+          context.stroke();
+          //tegner strek 7
+          context.moveTo(100,320);
+          context.lineTo(300,320);
+          context.stroke();
+          //tegner strek 8
+          context.moveTo(100,370);
+          context.lineTo(300,370);
+          context.stroke();
+          //tegner strek 9
+          context.moveTo(100,420);
+          context.lineTo(300,420);
+          context.stroke();
+          //tegner strek 10
+          context.stroke();
+          context.moveTo(100,470);
+          context.lineTo(300,470);
+          
 
 
-
-          var X = 100 + parseInt(data.mornat, 10);
+          //tegner prikkene 
+          var X = 100 + parseInt(data.mornat * 20); // starter på 100 på x-aksen + 0*20 = 100
           var Y = 20;
           var R = 5;
           context.beginPath();
@@ -151,7 +194,7 @@
           context.strokeStyle = "black";
           context.stroke();
 
-          var X = 100 + parseInt(data.alsa, 10);
+          var X = 100 + parseInt(data.alsa * 20); // 100 + (0*20) = 100 // tegner på pixel 100
           var Y = 70;
           var R = 5;
           context.beginPath();
@@ -162,7 +205,7 @@
           context.strokeStyle = "black";
           context.stroke();
 
-          var X = 100 + parseInt(data.borf * 20); //denne funker kanskje ikke på alle datasett
+          var X = 100 + parseInt(data.borf * 20); // 100 + (10*20) = 300 // tegner på pixel 300
           var Y = 120;
           var R = 5;
           context.beginPath();
@@ -172,6 +215,30 @@
           context.lineWidth = 1;
           context.strokeStyle = "black";
           context.stroke();
+
+          var X = 100 + parseInt(data.snvi * 20);
+          var Y = 170;
+          var R = 5;
+          context.beginPath();
+          context.arc(X, Y, R, 0, 2*Math.PI, false);
+          context.fillStyle = "yellow";
+          context.fill();
+          context.lineWidth = 1;
+          context.strokeStyle = "black";
+          context.stroke();
+
+          var X = 100 + parseInt(data.fafl * 20); 
+          var Y = 220;
+          var R = 5;
+          context.beginPath();
+          context.arc(X, Y, R, 0, 2*Math.PI, false);
+          context.fillStyle = "yellow";
+          context.fill();
+          context.lineWidth = 1;
+          context.strokeStyle = "black";
+          context.stroke();
+
+          
       });
 
       // fetch('https://bacit.info/hwr/20210930124013-14381db014f163f17bffdb5238b5657c.json')
