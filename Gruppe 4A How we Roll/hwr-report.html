@@ -124,7 +124,8 @@
          
          var canvas = document.getElementById('report');
          var context = canvas.getContext('2d');
-
+          
+          //dette trengs bare å bli gjort på den første fetchen
           context.font = '14px serif';
           //tegner Texten til mornat
           context.fillText('Morgenfugl', 15, 24);
@@ -136,6 +137,7 @@
           context.fillText('Fortell meg', 15, 124);
           context.fillText('Kutt ut', 315, 124);
           
+          //dette trengs bare å bli gjort på den første fetchen
           //tegner strek 1
           context.beginPath();
           context.moveTo(100,20);
@@ -178,7 +180,7 @@
           context.lineTo(300,470);
           
 
-
+          //må gjøres på hver fetch
           //tegner prikkene 
           var X = 100 + parseInt(data.mornat * 20); // starter på 100 på x-aksen + 0*20 = 100
           var Y = 20;
