@@ -1,0 +1,14 @@
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - Katrine.jpg
+  - sebby.jpg
+  - techBakgrunn.png
+  - uia logo.png
+  - how-we-roll.html
+  - HWR-Gruppe 4A.md
+  - hwr-report.html
+  - index.html
