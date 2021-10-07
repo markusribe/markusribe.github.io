@@ -314,7 +314,7 @@
         .then((response) => response.json())
         .then((data) => {
           //debug
-          let debug = document.querySelector("#debug1");
+          let debug = document.querySelector("#debug2");
           Object.entries(data).forEach(([key, value]) => {
             debug.innerText += `${key}: ${value} |`;
           });
@@ -424,7 +424,7 @@
         .then((response) => response.json())
         .then((data) => {
           //debug
-          let debug = document.querySelector("#debug1");
+          let debug = document.querySelector("#debug3");
           Object.entries(data).forEach(([key, value]) => {
             debug.innerText += `${key}: ${value} |`;
           });
@@ -534,7 +534,7 @@
         .then((response) => response.json())
         .then((data) => {
           //debug
-          let debug = document.querySelector("#debug1");
+          let debug = document.querySelector("#debug4");
           Object.entries(data).forEach(([key, value]) => {
             debug.innerText += `${key}: ${value} |`;
           });
