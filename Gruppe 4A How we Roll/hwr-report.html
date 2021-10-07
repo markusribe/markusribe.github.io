@@ -103,11 +103,10 @@
     .then(response => response.json())
     .then(data => {
      
+      //debug
       let debug = document.querySelector("#debug");
           Object.entries(data).forEach(([key , value]) => {
             debug.innerText += `${key}: ${value} |`;
-            //form.innerText += (`${key}: ${value}`)
-            //form.innerHTML += (`${key}: ${value}`)
           });
           // data.forEach((data) => {
           //   debug.textContent += $data.Name;
