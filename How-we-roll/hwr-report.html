@@ -138,14 +138,36 @@
           context.fillText('Jobbe alene', 15, 74);
           context.fillText('Jobbe sammen', 315, 74);
           //tegner texten til borf
-          context.fillText('Fortell meg', 15, 124);
-          context.fillText('Kutt ut', 315, 124);
+          context.fillText('Fortell meg mer', 0, 124);
+          context.fillText('Gå rett på sak', 315, 124);
+          //tegner texten til snvi
+          context.fillText('Snakke om det', 5, 174);
+          context.fillText('Gå videre', 315, 174);
+          //tegner texten til vemo
+          context.fillText('Muntlig', 40, 224);
+          context.fillText('Skriftlig', 315, 224);
+          //tegner texten til sepr
+          context.fillText('Sett tid for prat', 0, 274);
+          context.fillText('Avbryt for å prate', 315, 274);
+          //tegner texten til vich
+          context.fillText('Video', 50, 324);
+          context.fillText('Chatte', 315, 324);
+          //tegner texten til fafl
+          context.fillText('Fast timeplan', 10, 374);
+          context.fillText('Fleksibel timeplan', 315, 374);
+          //tegner texten til wima
+          context.fillText('Windows', 35, 424);
+          context.fillText('macOS', 315, 424);
+          //tegner texten til kate
+          context.fillText('Kaffe', 55, 474);
+          context.fillText('Te', 315, 474);
           
           //dette trengs bare å bli gjort på den første fetchen
           //tegner strek 1
           context.beginPath();
           context.moveTo(100,20);
           context.lineTo(300,20);
+          context.stroke();
           //tegner strek 2
           context.moveTo(100,70);
           context.lineTo(300,70);
@@ -203,7 +225,6 @@
 
           var X = 100 + parseInt(data.alsa * 20); // 100 + (0*20) = 100 // tegner på pixel 100
           var Y = 70;
-          var R = 5;
           context.beginPath();
           context.arc(X, Y, R, 0, 2*Math.PI, false);
           context.fillStyle = "yellow";
@@ -213,7 +234,6 @@
 
           var X = 100 + parseInt(data.borf * 20); // 100 + (10*20) = 300 // tegner på pixel 300
           var Y = 120;
-          var R = 5;
           context.beginPath();
           context.arc(X, Y, R, 0, 2*Math.PI, false);
           context.fillStyle = "yellow";
@@ -223,7 +243,6 @@
 
           var X = 100 + parseInt(data.snvi * 20);
           var Y = 170;
-          var R = 5;
           context.beginPath();
           context.arc(X, Y, R, 0, 2*Math.PI, false);
           context.fillStyle = "yellow";
@@ -231,9 +250,8 @@
           context.strokeStyle = "black";
           context.stroke();
 
-          var X = 100 + parseInt(data.vemo * 20); 
+          var X = 100 + parseInt(data.vemo * 20);
           var Y = 220;
-          var R = 5;
           context.beginPath();
           context.arc(X, Y, R, 0, 2*Math.PI, false);
           context.fillStyle = "yellow";
@@ -243,7 +261,6 @@
 
           var X = 100 + parseInt(data.sepr * 20);
           var Y = 270;
-          var R = 5;
           context.beginPath();
           context.arc(X, Y, R, 0, 2*Math.PI, false);
           context.fillStyle = "yellow";
@@ -253,7 +270,6 @@
 
           var X = 100 + parseInt(data.vich * 20);
           var Y = 320;
-          var R = 5;
           context.beginPath();
           context.arc(X, Y, R, 0, 2*Math.PI, false);
           context.fillStyle = "yellow";
@@ -264,7 +280,6 @@
 
           var X = 100 + parseInt(data.fafl * 20);
           var Y = 370;
-          var R = 5;
           context.beginPath();
           context.arc(X, Y, R, 0, 2*Math.PI, false);
           context.fillStyle = "yellow";
@@ -276,7 +291,6 @@
 
           var X = 100 + parseInt(data.wima * 20);
           var Y = 420;
-          var R = 5;
           context.beginPath();
           context.arc(X, Y, R, 0, 2*Math.PI, false);
           context.fillStyle = "yellow";
@@ -287,7 +301,6 @@
 
           var X = 100 + parseInt(data.kate * 20);
           var Y = 470;
-          var R = 5;
           context.beginPath();
           context.arc(X, Y, R, 0, 2*Math.PI, false);
           context.fillStyle = "yellow";
