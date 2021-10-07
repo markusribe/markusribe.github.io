@@ -420,19 +420,114 @@
             context.stroke();
           });
 
-  // fetch('https://bacit.info/hwr/20210930124013-14381db014f163f17bffdb5238b5657c.json')
-  //   .then(response => response.json())
-  //   .then(data => {
-  //     let form = document.querySelector("#form");
-  //     Object.entries(data).forEach(([key , value]) => {
-  //       form.innerText += `${key}: ${value}`;
-  //       //form.innerText += (`${key}: ${value}`)
-  //       //form.innerHTML += (`${key}: ${value}`)
-  //     });
-  //     data.forEach((data) => {
-  //       form.textContent += $data.Name;
-  //     });
-  //   });
+  // Markus sin rapport
+  fetch("https://bacit.info/hwr/20211007171130-b66a373219b6734ccb90fa4c008722d7.json", {cache: 'no-cache'})
+          .then(response => response.json())
+          .then(data => {
+
+            //debug
+            let debug = document.querySelector("#debug1");
+            Object.entries(data).forEach(([key , value]) => {
+              debug.innerText += `${key}: ${value} |`;
+            });
+            //må gjøres på hver fetch
+            //tegner prikkene
+            var X = 100 + parseInt(data.mornat * 20); // starter på 100 på x-aksen + 0*20 = 100
+            var Y = 18;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "blue";
+            context.fill();
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 100 + parseInt(data.alsa * 20); // 100 + (0*20) = 100 // tegner på pixel 100
+            var Y = 70;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "blue";
+            context.fill();
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 100 + parseInt(data.borf * 20); // 100 + (10*20) = 300 // tegner på pixel 300
+            var Y = 120;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "blue";
+            context.fill();
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 100 + parseInt(data.snvi * 20);
+            var Y = 170;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "blue";
+            context.fill();
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 100 + parseInt(data.vemo * 20);
+            var Y = 220;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "blue";
+            context.fill();
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 100 + parseInt(data.sepr * 20);
+            var Y = 270;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "blue";
+            context.fill();
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 100 + parseInt(data.vich * 20);
+            var Y = 320;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "blue";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 100 + parseInt(data.fafl * 20);
+            var Y = 370;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "blue";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+
+            var X = 100 + parseInt(data.wima * 20);
+            var Y = 420;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "blue";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 100 + parseInt(data.kate * 20);
+            var Y = 470;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "blue";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+          });
 
   // //henter formen fra server
   // fetch('https://bacit.info/hwr/20210930124013-14381db014f163f17bffdb5238b5657c.json')
