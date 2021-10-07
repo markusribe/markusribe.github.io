@@ -128,9 +128,6 @@
           Object.entries(data).forEach(([key , value]) => {
             debug.innerText += `${key}: ${value} |`;
           });
-         
-         var canvas = document.getElementById('report');
-         var context = canvas.getContext('2d');
           
           //dette trengs bare å bli gjort på den første fetchen
           context.font = '14px serif';
@@ -194,7 +191,7 @@
           var R = 5;
           context.beginPath();
           context.arc(X, Y, R, 0, 2*Math.PI, false);
-          context.fillStyle = "lightgreen";
+          context.fillStyle = "yellow";
           context.fill();
           context.strokeStyle = "black";
           context.stroke();
@@ -204,7 +201,7 @@
           var R = 5;
           context.beginPath();
           context.arc(X, Y, R, 0, 2*Math.PI, false);
-          context.fillStyle = "red";
+          context.fillStyle = "yellow";
           context.fill();
           context.strokeStyle = "black";
           context.stroke();
