@@ -74,8 +74,6 @@
         margin-left: auto;
         margin-right: auto;
         display: block;
-        width: 500px;
-        height: 1000px;
       }
       .navnfarge {
         display: inline-block;
@@ -164,6 +162,12 @@
         Sebastian M
       </p>
   </div>
+    <br />
+    <canvas id="report" width="500px" height="600px"></canvas>
+    <br />
+    <div id="form"></div>
+    <br />
+    <h4>Debug</h4>
     <div id="debug1"></div>
     <div id="debug2"></div>
     <div id="debug3"></div>
@@ -172,11 +176,6 @@
     <div id="debug6"></div>
     <div id="debug7"></div>
     <div id="debug8"></div>
-    <br />
-    <canvas id="report" width="500px" height="1000px"></canvas>
-    <br />
-    <div id="form"></div>
-    <br />
     <!-- <div id="Navn1"></div>
 <div id="mornat1"></div>
 <div id="alsa1"></div>
@@ -284,6 +283,7 @@
 
           //må gjøres på hver fetch
           //tegner prikkene
+          //håkon sin
           var X = 100 + parseInt(data.mornat * 20); // starter på 100 på x-aksen + 0*20 = 100
           var Y = 20;
           var R = 5;
@@ -340,7 +340,7 @@
           context.stroke();
 
           var X = 100 + parseInt(data.vich * 20);
-          var Y = 320;
+          var Y = 310;
           context.beginPath();
           context.arc(X, Y, R, 0, 2 * Math.PI, false);
           context.fillStyle = "yellow";
