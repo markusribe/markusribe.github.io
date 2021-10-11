@@ -184,23 +184,10 @@
 <div id="mornat2"></div>
 <div id="alsa2"></div> -->
     <script>
-      //canvas visuell
+      
       var canvas = document.getElementById("report");
       var context = canvas.getContext("2d");
-
-      fetch(
-        "https://bacit.info/hwr/20211007134715-86c6d29c1a447d10dfc3f9efdf820057.json",
-        { cache: "no-cache" }
-      )
-        .then((response) => response.json())
-        .then((data) => {
-          //debug
-          let debug = document.querySelector("#debug1");
-          Object.entries(data).forEach(([key, value]) => {
-            debug.innerText += `${key}: ${value} |`;
-          });
-
-          //dette trengs bare å bli gjort på den første fetchen
+      //canvas visuell
           context.font = "14px serif";
           //tegner Texten til mornat
           context.fillText("Morgenfugl", 15, 24);
@@ -280,6 +267,18 @@
           context.stroke();
           context.moveTo(100, 520);
           context.lineTo(300, 520);
+
+      fetch(
+        "https://bacit.info/hwr/20211007134715-86c6d29c1a447d10dfc3f9efdf820057.json",
+        { cache: "no-cache" }
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          //debug
+          let debug = document.querySelector("#debug1");
+          Object.entries(data).forEach(([key, value]) => {
+            debug.innerText += `${key}: ${value} |`;
+          });
 
           //må gjøres på hver fetch
           //tegner prikkene
@@ -826,7 +825,7 @@
               .then((response) => response.json())
               .then((data) => {
                 //debug
-                let debug = document.querySelector("#debug5");
+                let debug = document.querySelector("#debug6");
                 Object.entries(data).forEach(([key, value]) => {
                   debug.innerText += `${key}: ${value} |`;
                 });
@@ -936,7 +935,7 @@
               .then((response) => response.json())
               .then((data) => {
                 //debug
-                let debug = document.querySelector("#debug5");
+                let debug = document.querySelector("#debug7");
                 Object.entries(data).forEach(([key, value]) => {
                   debug.innerText += `${key}: ${value} |`;
                 });
